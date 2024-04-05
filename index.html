@@ -26,7 +26,7 @@
         </li>
         <li>
           <!-- Не понимаю к чему привязывать якорную ссылку,такого блока в проекте пока нет. -->
-          <a href="#Net takogo block..">Бронь</a>
+          <a href="#">Бронь</a>
         </li>
         <li>
           <a href="#reviews">Отзывы</a>
@@ -71,7 +71,7 @@
       </li>
       <li>
         <figure>
-          <img src="img/micro.jpg" alt="" width="380" height="228" loading="lazy">
+          <img src="img/sony.jpg" alt="" width="380" height="228" loading="lazy">
           <figcaption>Play Station 5</figcaption>
         </figure>
       </li>
@@ -122,6 +122,41 @@
       <a href="https://telegram.org/" target="_blank">Telegram</a>
     </li>
   </ul>
+  <div>
+    <h2>Заказать звонок</h2>
+    <form id="go_form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+
+      <p>
+        <label for="name">
+          Имя <br>
+          <input type="text" id="name" name="user_name" required>
+        </label>
+      </p>
+
+      <p>
+        <label for="surname">
+          Фамилия <br>
+          <input type="text" id="surname" name="user_surname" required>
+        </label>
+      </p>
+
+      <p>
+        <label for="phone">
+          Номер телефона <br>
+          <input type="tel" id="phone" name="tel" required>
+        </label>
+      </p>
+
+      <p>
+        <input type="checkbox" name="data" value="personal data"> Согласен на обработку персональных данных
+      </p>
+      <button type="submit">Перезвоните мне</button>
+
+
+    </form>
+
+  </div>
+
 </body>
 
 </html>
