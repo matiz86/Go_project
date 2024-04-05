@@ -88,6 +88,98 @@
     </ol>
   </div>
 
+  <div>
+    <h2>Забронировать</h2>
+    <form id="to_book" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <fieldset>
+        <label>
+          <input type="radio" name="style" value="vibes" required>80&rsquo;s vibes
+        </label>
+        <label>
+          <input type="radio" name="style" value="star_wars">star wars
+        </label>
+        <label>
+          <input type="radio" name="style" value="wild_west">wild west
+        </label>
+        <label>
+          <input type="radio" name="style" value="neon">neon style
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Собери набор развлечений</legend>
+
+        <fieldset>
+          <legend>Приставка:</legend>
+          <label>
+            <input type="radio" name="console" value="sony" required>PlayStation
+          </label>
+          <label>
+            <input type="radio" name="console" value="mega_drive">Sega Mega Drive
+          </label>
+          <label>
+            <input type="radio" name="console" value="x-box">X-box One S
+          </label>
+          <label>
+            <input type="radio" name="console" value="dendy">Dandy
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Настольные игры:</legend>
+          <label>
+            <input type="radio" name="table_games" value="jenga" required>Jenga
+          </label>
+          <label>
+            <input type="radio" name="table_games" value="monopoly">Monopoly
+          </label>
+          <label>
+            <input type="radio" name="table_games" value="manckin">Манчкин
+          </label>
+          <label>
+            <input type="radio" name="table_games" value="alias">Alias
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно:</legend>
+          <label>
+            <input type="radio" name="add" value="karaoke" required>Караоке
+          </label>
+          <label>
+            <input type="radio" name="add" value="vr">VR
+          </label>
+        </fieldset>
+
+      </fieldset>
+      <fieldset>
+        <legend>Выбери дату и время</legend>
+
+        <label for="date">Дата:<abbr title="required">*</abbr></label>
+        <input id="date" type="date" name="date" required>
+
+        <label for="time">Время:<abbr title="required">*</abbr></label>
+        <input id="time" type="time" name="time" required>
+        <br>
+        <label for="qty">Количество человек:<abbr title="required">*</abbr></label>
+        <input id="qty" type="text" name="quantity" required>
+        <br>
+        <label for="name">Имя:<abbr title="required">*</abbr></label>
+        <input id="name" type="text" name="username" required>
+        <br>
+        <label for="surname">Фамилия:<abbr title="required">*</abbr></label>
+        <input id="surname" type="text" name="surname" required>
+        <br>
+        <label for="tel">Номер телефона:<abbr title="required">*</abbr></label>
+        <input id="tel" type="tel" name="phone" required title="+7___-___-__-__"
+          pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
+        <br>
+        <input type="checkbox" name="age" value="age" required> Я старше 18 лет
+      </fieldset>
+      <button type="submit">Забронировать</button>
+      <input type="checkbox" value="permission" name="permission" required> Согласен на обработку персональных данных
+    </form>
+  </div>
+
   <div id="about">
     <h2>О нас</h2>
     <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной
@@ -127,23 +219,24 @@
     <form id="go_form" action="https://jsonplaceholder.typicode.com/posts" method="post">
 
       <p>
-        <label for="name">
+        <label>
           Имя <br>
-          <input type="text" id="name" name="user_name" required>
+          <input type="text" name="user_name" required>
         </label>
       </p>
 
       <p>
-        <label for="surname">
+        <label>
           Фамилия <br>
-          <input type="text" id="surname" name="user_surname" required>
+          <input type="text" name="user_surname" required>
         </label>
       </p>
 
       <p>
-        <label for="phone">
+        <label>
           Номер телефона <br>
-          <input type="tel" id="phone" name="tel" required>
+          <input type="tel" name="tel" required title="+7___-___-__-__"
+            pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
         </label>
       </p>
 
