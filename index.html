@@ -11,89 +11,57 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-
-      <a href="#"><img src="img/logo.svg" alt="Логотип" width="120" height="66" loading="lazy"></a>
-
-      <h1>Меню</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="#zali">Залы</a>
-          </li>
-          <li>
-            <a href="#about"> О нас</a>
-          </li>
-          <li>
-            <a href="#booking">Бронь</a>
-          </li>
-          <li>
-            <a href="#reviews">Отзывы</a>
-          </li>
-          <li>
-            <a href="#contacts">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="#zali">
+  <header class="header">
+    <div class="container">
+      <div class="header__banner">
+        <h1 class="header__banner-title">GAME OVER</h1>
+        <p class="header__banner-desc">Новый формат игр и отдыха</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="halls" id="halls">
+      <div class="container">
         <div>
-          <h2>У нас есть всё для классного отдыха с друзьями!</h2>
-          <ul>
-            <li>
-              <figure><img src="img/vr.jpg" alt="VR" width="380" height="228" loading="lazy">
-                <figcaption>VR очки</figcaption>
+          <h2 class="halls__title">Наши залы</h2>
+          <ul class="halls__list">
+            <li class="halls__list-item">
+              <figure class="halls__item-img">
+                <img src="img/vibes.jpeg" alt="" width="1180" height="710" loading="lazy">
+                <figcaption class="halls__item-desc">80&rsquo;s vibes&shy;</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img src="img/audio.jpg" alt="Аудио-система" width="380" height="228" loading="lazy">
-                <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+            <li class="halls__list-item">
+              <figure class="halls__item-img">
+                <img src="img/starwars.jpeg" alt="" width="1180" height="710" loading="lazy">
+                <figcaption class="halls__item-desc">star wars</figcaption>
               </figure>
             </li>
-            <li>
-              <figure><img src="img/micro.jpg" alt="Караоке" width="380" height="228" loading="lazy">
-                <figcaption>Караоке (4 микрофона)</figcaption>
+            <li class="halls__list-item">
+              <figure class="halls__item-img">
+                <img src="img/wildwest.jpeg" alt="" width="1180" height="710" loading="lazy">
+                <figcaption class="halls__item-desc">wild west</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img src="img/game.jpg" alt="изображены настольные игры" width="380" height="228" loading="lazy">
-                <figcaption>Настольные игры</figcaption>
+            <li class="halls__list-item">
+              <figure class="halls__item-img">
+                <img src="img/neon.jpeg" alt="" width="1180" height="710" loading="lazy">
+                <figcaption class="halls__item-desc">neon style</figcaption>
               </figure>
             </li>
-            <li>
-              <figure>
-                <img src="img/netflix.jpg " alt="Кино сервисы" width="380" height="228" loading="lazy">
-                <figcaption>Кино сервисы Netfkix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <img src="img/sony.jpg" alt="Play Station" width="380" height="228" loading="lazy">
-                <figcaption>Play Station 5</figcaption>
-              </figure>
-            </li>
+
           </ul>
         </div>
-        <div>
-          <h2>Наши залы</h2>
-          <ol>
-            <li><a href="vibes.html" target="_blank">80&rsquo;s vibes</a></li>
-            <li><a href="starwars.html" target="_blank">Star wars</a></li>
-            <li><a href="wildwest.html" target="_blank">Wild west</a></li>
-            <li><a href="neon.html" target="_blank">Neon style</a></li>
-          </ol>
-        </div>
-      </section>
+      </div>
+    </section>
 
 
 
-      <section id="booking">
-        <h2>Забронировать зал просто</h2>
-        <form id="to_book" action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <section class="booking" id="booking">
+      <div class="container booking__container">
+        <h2 class="booking__title">Забронировать</h2>
+        <img class="booking__img" src="img/form.jpg" alt="form image" width="1440" height="349" loading="lazy">
+        <!-- <form id="to_book" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <fieldset>
             <legend>Выбери зал</legend>
             <label>
@@ -111,7 +79,6 @@
           </fieldset>
           <fieldset>
             <legend>Собери набор развлечений</legend>
-
             <fieldset>
               <legend>Приставка:</legend>
               <ul>
@@ -137,7 +104,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset>
               <legend>Настольные игры:</legend>
               <ul>
@@ -163,7 +129,6 @@
                 </li>
               </ul>
             </fieldset>
-
             <fieldset>
               <legend>Дополнительно:</legend>
               <ul>
@@ -180,11 +145,8 @@
               </ul>
             </fieldset>
           </fieldset>
-
           <fieldset>
             <legend>Выбери дату и время</legend>
-
-
             <ul>
               <li>
                 <label for="date">Дата:<abbr title="required">*</abbr></label>
@@ -211,7 +173,6 @@
                 </li>
               </ul>
             </div>
-
             <div>
               <ul>
                 <li>
@@ -228,27 +189,37 @@
             </div>
           </fieldset>
           <button type="submit">Забронировать</button>
-        </form>
-      </section>
+        </form> -->
+      </div>
+    </section>
 
-      <section id="about">
-
-        <h2>О нас</h2>
-
-        <div>
-          <p>Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title">О нас</h2>
+        <div class="about__content">
+          <p class="about__desc">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
+            реальностив
             центральной
             части города</p>
-          <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми
+          <p class="about__desc">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
+            Вас топовыми игровыми
             разработками со всего мира.</p>
-          <blockquote>
-            <p><strong>GAME OVER &mdash;</strong>это место незабываемых впечатлений</p>
-            <cite>Аркадий Абашкин, создатель территории GAME OVER</cite>
-          </blockquote>
         </div>
 
-      </section>
-      <section id="reviews">
+        <blockquote class="about__citate">
+          <p class="about__citate-desc">GAME OVER&nbsp;&mdash;
+            ЭТО &shy; МЕСТО НЕЗАБЫВАЕМЫХ ВПЕЧАТЛЕНИЙ</p>
+          <div class="about__boss">
+            <img class="about__boss-img" src="img/ceo.jpg" alt="ceo image" width="80" height="80" loading="lazy">
+            <cite class="desc">Аркадий Абакшин,
+              создатель игровой территории GAME OVER</cite>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- <section class="reviews" id="reviews">
+      <div class="container">
         <h2>Отзывы посетителей</h2>
         <ul>
           <li>
@@ -277,60 +248,115 @@
               если немножко "изучил" бар,то будто попал в космос!</p>
           </li>
         </ul>
-      </section>
-      <section>
-        <h2>Частые вопросы</h2>
-        <ul>
-          <li class="faq-item">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq-item">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq-item">Какая комната самая популярная?</li>
-          <li class="faq-item">Как получить VIP карту?</li>
-          <li class="faq-item">Какая комната самая популярная?</li>
+      </div>
+    </section> -->
+
+    <section class="questions" id="questions">
+      <div class="container">
+        <h2 class="questions__title">Частые вопросы</h2>
+        <ul class="questions__list">
+          <li class="questions__item">Можно ли забронировать комнату онлайн?</li>
+          <li class="questions__item">Могут ли мне вернуть деньги за бронь?</li>
+          <li class="questions__item">Какая комната самая популярная?</li>
+          <li class="questions__item">Как получить VIP карту?</li>
+          <li class="questions__item">Какая комната самая популярная?</li>
         </ul>
-      </section>
+      </div>
 
-    </main>
+    </section>
+  </main>
 
-    <footer>
-
-      <section id="contacts">
-        <h2>Контакты</h2>
-
-        <div>
-          <address>
-            <p>г. Москва ул. Аквамарина, 16</p>
-            <a href="tel:89509302893">8(950)9302893</a>
-            <br>
-            <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
-          </address>
-          <ul>
-            <li>
-              <a href="https://vk.com/" target="_blank">Vkontakte</a>
+  <footer>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <address class="contacts__info">
+          <p class="contacts__info-addres">
+            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z"
+                fill="#CD06FF" />
+              <path
+                d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z"
+                fill="#CD06FF" />
+            </svg>
+            г. Москва ул. Аквамарина, 16
+          </p>
+          <a class="contacts__info-phone" href="tel:89509302893">
+            <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.1358 14.6654H32.0494C32.0494 7.82541 26.4072 2.66675 18.9237 2.66675V5.33341C24.8412 5.33341 29.1358 9.25741 29.1358 14.6654Z"
+                fill="#CD06FF" />
+              <path
+                d="M18.9382 10.6667C22.0019 10.6667 23.3086 11.8627 23.3086 14.6667H26.2222C26.2222 10.3667 23.6364 7.99999 18.9382 7.99999V10.6667ZM23.9234 17.924C23.6435 17.6911 23.2756 17.5669 22.8975 17.5776C22.5194 17.5883 22.1607 17.7331 21.897 17.9813L18.4109 21.2627C17.5718 21.116 15.8848 20.6347 14.1483 19.0493C12.4118 17.4587 11.8859 15.9107 11.73 15.148L15.3123 11.956C15.5839 11.7148 15.7422 11.3864 15.7539 11.0403C15.7656 10.6941 15.6297 10.3574 15.3749 10.1013L9.9921 4.68399C9.73722 4.42714 9.38298 4.27133 9.00462 4.24967C8.62625 4.22801 8.25356 4.3422 7.9657 4.56799L4.80447 7.04933C4.55261 7.28068 4.40228 7.58859 4.382 7.91466C4.36015 8.24799 3.94351 16.144 10.6331 22.2693C16.469 27.6093 23.7792 28 25.7924 28C26.0867 28 26.2674 27.992 26.3154 27.9893C26.6716 27.9711 27.0079 27.8329 27.2594 27.6013L29.9691 24.7067C30.2159 24.4434 30.341 24.1024 30.3176 23.7561C30.2942 23.4098 30.1242 23.0855 29.8438 22.852L23.9234 17.924Z"
+                fill="#CD06FF" />
+            </svg>
+            8 (950) 930 - 28 - 93</a>
+          <a class="contacts__info-mail" href="mailto:GameOver@gmail.com">
+            <svg width="36" height="32" viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.10021 5.94725C5.89873 9.66669 14.3187 16.2103 16.7934 18.2506C17.1256 18.526 17.4819 18.666 17.8518 18.666C18.221 18.666 18.5767 18.5273 18.9082 18.2533C21.385 16.2109 29.8049 9.66669 34.6035 5.94725C34.9023 5.71612 34.9478 5.30987 34.706 5.02731C34.1468 4.37437 33.3132 4 32.4197 4H3.28396C2.39056 4 1.55684 4.37438 0.997775 5.02738C0.755902 5.30988 0.80145 5.71612 1.10021 5.94725Z"
+                fill="#CD06FF" />
+              <path
+                d="M34.9108 7.96279C34.6526 7.85279 34.3489 7.89116 34.1341 8.05916C28.8126 12.188 22.0209 17.4804 19.8841 19.2427C18.6847 20.2336 17.0202 20.2336 15.8181 19.2414C13.5405 17.3632 5.91363 11.4289 1.56962 8.0591C1.35335 7.8911 1.04893 7.85404 0.792853 7.96273C0.535411 8.07216 0.370361 8.30785 0.370361 8.5676V25.3332C0.370361 26.804 1.67703 27.9999 3.28396 27.9999H32.4198C34.0267 27.9999 35.3333 26.804 35.3333 25.3332V8.5676C35.3333 8.30785 35.1683 8.07154 34.9108 7.96279Z"
+                fill="#CD06FF" />
+            </svg>
+            GameOver@gmail.com</a>
+        </address>
+        <div class="contacts__social">
+          <ul class="social__list">
+            <li class="social__list-item">
+              <a class="social__item-link" href="#">
+                <img class="social__link-img" src="img/vk.svg" alt="логотип вконтакте" width="50" height="50"
+                  loading="lazy">
+              </a>
             </li>
-            <li>
-              <a href="https://telegram.org/" target="_blank">Telegram</a>
+            <li class="social__list-item">
+              <a class="social__item-link" href="#">
+                <img class="social__link-img" src="img/telegram.svg" alt="логотип телеграм" width="50" height="50"
+                  loading="lazy">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__item-link" href="#">
+                <img class="social__link-img" src="img/pinterest.svg" alt="логотип пинтерес" width="50" height="50"
+                  loading="lazy">
+              </a>
+            </li>
+            <li class="social__list-item">
+              <a class="social__item-link" href="#">
+                <img class="social__link-img" src="img/stumbleupon.svg" alt="логотип стамблепон" width="50" height="50"
+                  loading="lazy"></a>
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+  </footer>
+  <!-- <li>
+          <a href="https://vk.com/" target="_blank">Vkontakte</a>
+        </li>
+        <li>
+          <a href="https://telegram.org/" target="_blank">Telegram</a>
+        </li>
+        </ul> -->
 
-        <h2>Заказать звонок</h2>
+
+  <!-- <h2>Заказать звонок</h2>
         <div>
           <form id="go_form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-
             <p>
               <label>
                 Имя <br>
                 <input type="text" name="user_name" required>
               </label>
             </p>
-
             <p>
               <label>
                 Фамилия <br>
                 <input type="text" name="user_surname" required>
               </label>
             </p>
-
             <p>
               <label>
                 Номер телефона <br>
@@ -340,11 +366,8 @@
             </p>
             <button type="submit">Перезвоните мне</button>
           </form>
+        </div> -->
 
-        </div>
-      </section>
-    </footer>
-  </div>
 
 
 

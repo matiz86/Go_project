@@ -1,0 +1,35 @@
+.header {
+  padding-top: 146px;
+  margin-bottom: 100px;
+}
+
+.header__banner {
+  position: relative;
+  height: 823px;
+}
+
+.header__banner:after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/vr.png);
+  width: 675px;
+  height: 762px;
+  top: 61px;
+  right: 0;
+  z-index: 3;
+}
+
+.header__banner-title {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -15px;
+  z-index: 2;
+}
+
+.header__banner-desc {
+  padding-left: 100px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.78571;
+}

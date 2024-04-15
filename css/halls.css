@@ -1,0 +1,38 @@
+.halls {
+  margin-bottom: 100px;
+}
+
+.halls__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.halls__list-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.halls__item-img {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.halls__item-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1.14286;
+  text-transform: uppercase;
+}

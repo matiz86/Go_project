@@ -1,0 +1,88 @@
+.about {
+  margin-bottom: 100px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about__content {
+  margin-bottom: 70px;
+}
+
+.about__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.about__citate {
+  position: relative;
+  max-width: 1125px;
+  padding-left: 55px;
+}
+
+.about__citate-desc {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  white-space: pre-line;
+}
+
+.about__citate-desc:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/quotes.svg);
+  background-repeat: no-repeat;
+  left: 0;
+  width: 38px;
+  height: 34px;
+  /* font-weight: 900;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  color: #6c0287; */
+
+}
+
+.about__citate-desc:after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/quotes.svg);
+  background-repeat: no-repeat;
+  right: 0;
+  width: 38px;
+  height: 34px;
+  /* font-weight: 900;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  color: #6c0287; */
+  transform: rotate(180deg);
+}
+
+.about__boss {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 29px;
+}
+
+.about__boss-img {
+  border-radius: 100%;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 279px;
+  text-transform: none;
+}
