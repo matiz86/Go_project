@@ -11,17 +11,23 @@
   margin-bottom: 60px;
 }
 
-.halls__list-item:not(:last-child) {
+.halls__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+
+/* .halls__list-item:not(:last-child) {
   margin-bottom: 60px;
-}
+} */
 
-.halls__item-img {
+.halls__list-item {
   position: relative;
-  display: block;
-  width: 100%;
 }
 
-.halls__item-desc {
+
+
+.halls__item-link {
   position: absolute;
   top: 0;
   left: 0;
@@ -35,4 +41,5 @@
   font-size: 70px;
   line-height: 1.14286;
   text-transform: uppercase;
+  white-space: pre-line;
 }

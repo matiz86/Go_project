@@ -22,174 +22,172 @@
   <main>
     <section class="halls" id="halls">
       <div class="container">
-        <div>
-          <h2 class="halls__title">Наши залы</h2>
-          <ul class="halls__list">
-            <li class="halls__list-item">
-              <figure class="halls__item-img">
-                <img src="img/vibes.jpeg" alt="" width="1180" height="710" loading="lazy">
-                <figcaption class="halls__item-desc">80&rsquo;s vibes&shy;</figcaption>
-              </figure>
-            </li>
-            <li class="halls__list-item">
-              <figure class="halls__item-img">
-                <img src="img/starwars.jpeg" alt="" width="1180" height="710" loading="lazy">
-                <figcaption class="halls__item-desc">star wars</figcaption>
-              </figure>
-            </li>
-            <li class="halls__list-item">
-              <figure class="halls__item-img">
-                <img src="img/wildwest.jpeg" alt="" width="1180" height="710" loading="lazy">
-                <figcaption class="halls__item-desc">wild west</figcaption>
-              </figure>
-            </li>
-            <li class="halls__list-item">
-              <figure class="halls__item-img">
-                <img src="img/neon.jpeg" alt="" width="1180" height="710" loading="lazy">
-                <figcaption class="halls__item-desc">neon style</figcaption>
-              </figure>
-            </li>
-
-          </ul>
-        </div>
+        <h2 class="halls__title">Наши залы</h2>
+        <ul class="halls__list">
+          <li class="halls__list-item">
+            <img src="img/vibes.jpeg" alt="vibes image" width="1180" height="710" loading="lazy">
+            <a class="halls__item-link" href="#">
+              80’s
+              vibes</a>
+          </li>
+          <li class="halls__list-item">
+            <img src="img/starwars.jpeg" alt="starwars image" width="1180" height="710" loading="lazy">
+            <a class="halls__item-link" href="#">
+              Star
+              wars</a>
+          </li>
+          <li class="halls__list-item">
+            <img src="img/wildwest.jpeg" alt="wildwest image" width="1180" height="710" loading="lazy">
+            <a class="halls__item-link" href="#">
+              wild
+              west</a>
+          </li>
+          <li class="halls__list-item">
+            <img class="halls__item-img" src="img/neon.jpeg" alt="neon image" width="1180" height="710" loading="lazy">
+            <a class="halls__item-link" href="#">
+              neon
+              style</a>
+          </li>
+        </ul>
       </div>
     </section>
 
 
 
     <section class="booking" id="booking">
-      <div class="container booking__container">
-        <h2 class="booking__title">Забронировать</h2>
-        <img class="booking__img" src="img/form.jpg" alt="form image" width="1440" height="349" loading="lazy">
-        <!-- <form id="to_book" action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <div class="container ">
+        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <h2 class="booking__title">Забронировать</h2>
           <fieldset>
-            <legend>Выбери зал</legend>
-            <label>
-              <input type="radio" name="style" value="vibes">80&rsquo;s vibes
+            <label class="booking__label">
+              <input class="input__radio" type="radio" name="style" value="vibes">80&rsquo;s vibes
             </label>
-            <label>
-              <input type="radio" name="style" value="star_wars">star wars
+            <label class="booking__label">
+              <input class="input__radio" type="radio" name="style" value="star_wars">star wars
             </label>
-            <label>
-              <input type="radio" name="style" value="wild_west">wild west
+            <label class="booking__label">
+              <input class="input__radio" type="radio" name="style" value="wild_west">wild west
             </label>
-            <label>
-              <input type="radio" name="style" value="neon_style">neon style
+            <label class="booking__label">
+              <input class="input__radio" type="radio" name="style" value="neon_style">neon style
             </label>
           </fieldset>
           <fieldset>
-            <legend>Собери набор развлечений</legend>
+            <legend class="booking__subtitle">Собери набор развлечений</legend>
             <fieldset>
-              <legend>Приставка:</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="radio" name="console" value="sony" required>PlayStation
+              <legend class="booking__subtitle">Приставка:</legend>
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__radio" type="radio" name="console" value="sony" required>PlayStation
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="console" value="mega_drive">Sega Mega Drive
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__radio" type="radio" name="console" value="mega_drive">Sega Mega Drive
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="console" value="x-box">X-box One S
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__radio" type="radio" name="console" value="x-box">X-box One S
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="console" value="dendy">Dandy
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__radio" type="radio" name="console" value="dendy">Dandy
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Настольные игры:</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="table_games" value="jenga" required>Jenga
+              <legend class="booking__subtitle">Настольные игры:</legend>
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="table_games" value="jenga" required>Jenga
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="table_games" value="monopoly">Monopoly
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="table_games" value="monopoly">Monopoly
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="table_games" value="manckin">Манчкин
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="table_games" value="manckin">Манчкин
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="table_games" value="alias">Alias
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="table_games" value="alias">Alias
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Дополнительно:</legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="add" value="karaoke" required>Караоке
+              <legend class="booking__subtitle">Дополнительно:</legend>
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="add" value="karaoke" required>Караоке
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="add" value="vr">VR
+                <li class="booking__item">
+                  <label class="booking__label">
+                    <input class="booking__checkbox" type="checkbox" name="add" value="vr">VR
                   </label>
                 </li>
               </ul>
             </fieldset>
           </fieldset>
           <fieldset>
-            <legend>Выбери дату и время</legend>
-            <ul>
-              <li>
-                <label for="date">Дата:<abbr title="required">*</abbr></label>
-                <input id="date" type="date" name="date" required>
+            <legend class="booking__subtitle">Выбери дату и время</legend>
+            <ul class="booking__list">
+              <li class="booking__item">
+                <label class="booking__label" for="date">Дата:<abbr title="required">*</abbr></label>
+                <input class="booking__text" id="date" type="date" name="date" required>
               </li>
-              <li>
-                <label for="time">Время:<abbr title="required">*</abbr></label>
-                <input id="time" type="time" name="time" required>
+              <li class="booking__item">
+                <label class="booking__label" for="time">Время:<abbr title="required">*</abbr></label>
+                <input class="booking__text" id="time" type="time" name="time" required>
               </li>
-              <li>
-                <label for="qty">Сколько человек:<abbr title="required">*</abbr></label>
-                <input id="qty" type="text" name="quantity" required>
+              <li class="booking__item">
+                <label class="booking__label" for="qty">Сколько человек:<abbr title="required">*</abbr></label>
+                <input class="booking__text" id="qty" type="text" name="quantity" required>
               </li>
             </ul>
             <div>
-              <ul>
-                <li>
-                  <label for="name">Имя:<abbr title="required">*</abbr></label>
-                  <input id="name" type="text" name="username" required>
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="booking__label" for="name">Имя:<abbr title="required">*</abbr></label>
+                  <input class="booking__text" id="name" type="text" name="username" required>
                 </li>
-                <li>
-                  <label for="surname">Фамилия:<abbr title="required">*</abbr></label>
-                  <input id="surname" type="text" name="surname" required>
+                <li class="booking__item">
+                  <label class="booking__label" for="surname">Фамилия:<abbr title="required">*</abbr></label>
+                  <input class="booking__text" id="surname" type="text" name="surname" required>
                 </li>
               </ul>
             </div>
             <div>
-              <ul>
-                <li>
-                  <label for="tel">Номер телефона:<abbr title="required">*</abbr></label>
-                  <input id="tel" type="tel" name="phone" required title="+7___-___-__-__"
+              <ul class="booking__list">
+                <li class="booking__item">
+                  <label class="booking__label" for="tel">Номер телефона:<abbr title="required">*</abbr></label>
+                  <input class="booling__tel" id="tel" type="tel" name="phone" required title="+7___-___-__-__"
                     pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
                 </li>
-                <li>
-                  <label for="mail">E-mail
-                    <input type="email" id="mail" name="email" required>
+                <li class="booking__item">
+                  <label class="booking__label" for="mail">E-mail
+                    <input class="booling__mail" type="email" id="mail" name="email" required>
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
           <button type="submit">Забронировать</button>
-        </form> -->
+          <input class="booking__checkbox" type="checkbox" value="permission" name="permission" required> Согласен на
+          обработку персональных
+          данных
+        </form>
       </div>
     </section>
 
