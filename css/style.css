@@ -36,6 +36,15 @@ a {
   color: inherit;
 }
 
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+  margin: 0;
+}
+
 body {
   position: relative;
   overflow-x: hidden;

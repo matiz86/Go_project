@@ -18,6 +18,7 @@
 }
 
 svg {
+  display: inline-block;
   margin-right: 30px;
 }
 
