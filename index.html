@@ -14,8 +14,8 @@
   <header class="header">
     <div class="container">
       <div class="header__banner">
-        <h1 class="header__banner-title">GAME OVER</h1>
-        <p class="header__banner-desc">Новый формат игр и отдыха</p>
+        <h1 class="header__title">GAME OVER</h1>
+        <p class="header__desc">Новый формат игр и отдыха</p>
       </div>
     </div>
   </header>
@@ -24,27 +24,28 @@
       <div class="container">
         <h2 class="halls__title">Наши залы</h2>
         <ul class="halls__list">
-          <li class="halls__list-item">
-            <img src="img/vibes.jpeg" alt="vibes image" width="1180" height="710" loading="lazy">
-            <a class="halls__item-link" href="#">
+          <li class="halls__item">
+            <img class="halls__img" src="img/vibes.jpeg" alt="vibes image" width="1180" height="710" loading="lazy">
+            <a class="halls__link" href="#">
               80’s
               vibes</a>
           </li>
-          <li class="halls__list-item">
-            <img src="img/starwars.jpeg" alt="starwars image" width="1180" height="710" loading="lazy">
-            <a class="halls__item-link" href="#">
+          <li class="halls__item">
+            <img class="halls__img" src="img/starwars.jpeg" alt="starwars image" width="1180" height="710"
+              loading="lazy">
+            <a class="halls__link" href="#">
               Star
               wars</a>
           </li>
-          <li class="halls__list-item">
+          <li class="halls__item">
             <img src="img/wildwest.jpeg" alt="wildwest image" width="1180" height="710" loading="lazy">
-            <a class="halls__item-link" href="#">
+            <a class="halls__link" href="#">
               wild
               west</a>
           </li>
-          <li class="halls__list-item">
-            <img class="halls__item-img" src="img/neon.jpeg" alt="neon image" width="1180" height="710" loading="lazy">
-            <a class="halls__item-link" href="#">
+          <li class="halls__item">
+            <img class="halls__img" src="img/neon.jpeg" alt="neon image" width="1180" height="710" loading="lazy">
+            <a class="halls__link" href="#">
               neon
               style</a>
           </li>
@@ -58,7 +59,7 @@
       <div class="container ">
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <h2 class="booking__title">Забронировать</h2>
-          <fieldset>
+          <fieldset class="booking__field">
             <label class="booking__label">
               <input class="booking__radio" type="radio" name="style" value="vibes">80&rsquo;s vibes
             </label>
@@ -72,7 +73,7 @@
               <input class="booking__radio" type="radio" name="style" value="neon_style">neon style
             </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="booking__field">
             <legend class="booking__subtitle">Собери набор развлечений</legend>
             <fieldset>
               <legend class="booking__subtitle">Приставка:</legend>
@@ -99,7 +100,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="booking__field">
               <legend class="booking__subtitle">Настольные игры:</legend>
               <ul class="booking__list">
                 <li class="booking__item">
@@ -124,7 +125,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="booking__field">
               <legend class="booking__subtitle">Дополнительно:</legend>
               <ul class="booking__list">
                 <li class="booking__item">
@@ -140,7 +141,7 @@
               </ul>
             </fieldset>
           </fieldset>
-          <fieldset>
+          <fieldset class="booking__field">
             <legend class="booking__subtitle">Выбери дату и время</legend>
             <ul class="booking__list">
               <li class="booking__item">
@@ -182,8 +183,10 @@
                 </li>
               </ul>
             </div>
+            <input class="booking__checkbox" type="checkbox" value="permission" name="permission" required> Я старше 18
+            лет
           </fieldset>
-          <button type="submit">Забронировать</button>
+          <button class="booking__btn" type="submit">Забронировать</button>
           <input class="booking__checkbox" type="checkbox" value="permission" name="permission" required> Согласен на
           обработку персональных
           данных
@@ -194,25 +197,28 @@
     <section class="about" id="about">
       <div class="container">
         <h2 class="about__title">О нас</h2>
-        <div class="about__content">
-          <p class="about__desc">Для наших гостей мы создали концептуально новое игровое пространство виртуальной
-            реальностив
-            центральной
-            части города</p>
-          <p class="about__desc">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать
-            Вас топовыми игровыми
-            разработками со всего мира.</p>
-        </div>
-
-        <blockquote class="about__citate">
-          <p class="about__citate-desc">GAME OVER&nbsp;&mdash;
-            ЭТО &shy; МЕСТО НЕЗАБЫВАЕМЫХ ВПЕЧАТЛЕНИЙ</p>
-          <div class="about__boss">
-            <img class="about__boss-img" src="img/ceo.jpg" alt="ceo image" width="80" height="80" loading="lazy">
-            <cite class="desc">Аркадий Абакшин,
-              создатель игровой территории GAME OVER</cite>
+        <div class="about__box">
+          <img class="about__img" src="img/about-img.jpg" alt="Изображение в секции about__title">
+          <div class="about__content">
+            <p class="about__desc">Для наших гостей мы&nbsp;создали концептуально новое игровое пространство виртуальной
+              реальности
+              в&nbsp;центральной части города.</p>
+            <p class="about__desc">Каждый день мы&nbsp;стараемся создавать
+              для вас самую лучшую игровую атмосферу
+              и&nbsp;радовать Вас топовыми игровыми разработками
+              со&nbsp;всего мира.</p>
+            <blockquote class="about__citate">
+              <p class="about__citate-desc">GAME OVER&nbsp;&mdash;
+                ЭТО &shy; МЕСТО НЕЗАБЫВАЕМЫХ ВПЕЧАТЛЕНИЙ</p>
+              <div class="about__citate-boss">
+                <img class="about__citate-boss-img" src="img/ceo.jpg" alt="ceo image" width="80" height="80"
+                  loading="lazy">
+                <cite class="desc">Аркадий Абакшин,
+                  создатель игровой территории GAME OVER</cite>
+              </div>
+            </blockquote>
           </div>
-        </blockquote>
+        </div>
       </div>
     </section>
 
@@ -269,7 +275,7 @@
       <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <address class="contacts__info">
-          <p class="contacts__info-addres">
+          <a class="contacts__info-address">
             <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z"
@@ -278,8 +284,8 @@
                 d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z"
                 fill="#CD06FF" />
             </svg>
-            г. Москва ул. Аквамарина, 16
-          </p>
+            г. Москва <br>ул. Аквамарина, 16
+          </a>
           <a class="contacts__info-phone" href="tel:89509302893">
             <svg width="35" height="32" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -303,27 +309,26 @@
         </address>
         <div class="contacts__social social">
           <ul class="social__list">
-            <li class="social__list-item">
-              <a class="social__item-link" href="#">
-                <img class="social__link-img" src="img/vk.svg" alt="логотип вконтакте" width="50" height="50"
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/vk.svg" alt="логотип вконтакте" width="50" height="50" loading="lazy">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/telegram.svg" alt="логотип телеграм" width="50" height="50"
                   loading="lazy">
               </a>
             </li>
-            <li class="social__list-item">
-              <a class="social__item-link" href="#">
-                <img class="social__link-img" src="img/telegram.svg" alt="логотип телеграм" width="50" height="50"
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/pinterest.svg" alt="логотип пинтерес" width="50" height="50"
                   loading="lazy">
               </a>
             </li>
-            <li class="social__list-item">
-              <a class="social__item-link" href="#">
-                <img class="social__link-img" src="img/pinterest.svg" alt="логотип пинтерес" width="50" height="50"
-                  loading="lazy">
-              </a>
-            </li>
-            <li class="social__list-item">
-              <a class="social__item-link" href="#">
-                <img class="social__link-img" src="img/stumbleupon.svg" alt="логотип стамблепон" width="50" height="50"
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img class="social__img" src="img/stumbleupon.svg" alt="логотип стамблепон" width="50" height="50"
                   loading="lazy"></a>
             </li>
           </ul>

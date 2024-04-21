@@ -1,5 +1,6 @@
 .halls {
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .halls__title {
@@ -21,13 +22,13 @@
   margin-bottom: 60px;
 } */
 
-.halls__list-item {
+.halls__item {
   position: relative;
 }
 
 
 
-.halls__item-link {
+.halls__link {
   position: absolute;
   top: 0;
   left: 0;

@@ -1,6 +1,6 @@
 .header {
   padding-top: 146px;
-  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .header__banner {
@@ -19,7 +19,7 @@
   z-index: 3;
 }
 
-.header__banner-title {
+.header__title {
   font-weight: 900;
   font-size: 150px;
   line-height: 1;
@@ -27,7 +27,7 @@
   z-index: 2;
 }
 
-.header__banner-desc {
+.header__desc {
   padding-left: 100px;
   font-weight: 400;
   font-size: 28px;

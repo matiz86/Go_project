@@ -1,5 +1,6 @@
 .about {
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .about__title {
@@ -8,10 +9,10 @@
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-.about__content {
+/* .about__content {
   margin-bottom: 70px;
 }
 
@@ -44,11 +45,6 @@
   left: 0;
   width: 38px;
   height: 34px;
-  /* font-weight: 900;
-  font-size: 44px;
-  line-height: 1.13636;
-  text-transform: uppercase;
-  color: #6c0287; */
 
 }
 
@@ -60,22 +56,97 @@
   right: 0;
   width: 38px;
   height: 34px;
-  /* font-weight: 900;
-  font-size: 44px;
-  line-height: 1.13636;
-  text-transform: uppercase;
-  color: #6c0287; */
   transform: rotate(180deg);
 }
 
-.about__boss {
+.about__citate-boss {
   display: flex;
   justify-content: end;
   align-items: center;
   gap: 29px;
 }
 
-.about__boss-img {
+.about__citate-boss-img {
+  border-radius: 100%;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  max-width: 279px;
+  text-transform: none;
+} */
+
+
+
+
+.about__box {
+  display: flex;
+  gap: 80px;
+}
+
+.about__img {}
+
+.about__content {
+  max-width: 500px;
+}
+
+.about__desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 48px;
+}
+
+.about__citate {
+  position: relative;
+  max-width: 500px;
+  margin: 0;
+  padding-left: 31px;
+}
+
+.about__citate-desc {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  white-space: pre-line;
+}
+
+.about__citate-desc:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/quotes.svg);
+  background-repeat: no-repeat;
+  left: 0px;
+  width: 22px;
+  height: 50px;
+}
+
+.about__citate-desc:after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/quotes.svg);
+  background-repeat: no-repeat;
+  right: 0px;
+  top: 125px;
+  width: 22px;
+  height: 50px;
+  transform: rotate(180deg);
+}
+
+.about__citate-boss {
+  /* max-width: 389px; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 29px;
+}
+
+.about__citate-boss-img {
   border-radius: 100%;
 }
 

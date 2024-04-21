@@ -1,5 +1,6 @@
 .booking {
-  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* .booking__container {
@@ -20,3 +21,37 @@
   display: block;
   width: 100%;
 }
+
+.booking {}
+
+.container {}
+
+.booking__form {}
+
+.booking__title {}
+
+.booking__field {}
+
+.booking__label {}
+
+.booking__radio {}
+
+.booking__subtitle {}
+
+.booking__list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.booking__item {}
+
+.booking__checkbox {}
+
+.booking__text {}
+
+.booking__tel {}
+
+.booking__mail {}
+
+.booking__btn {}
