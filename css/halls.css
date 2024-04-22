@@ -9,13 +9,13 @@
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .halls__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 /* .halls__list-item:not(:last-child) {
@@ -24,6 +24,7 @@
 
 .halls__item {
   position: relative;
+  
 }
 
 
@@ -42,5 +43,4 @@
   font-size: 70px;
   line-height: 1.14286;
   text-transform: uppercase;
-  white-space: pre-line;
 }
