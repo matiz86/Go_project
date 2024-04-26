@@ -37,20 +37,25 @@
 }
 
 .booking__label-halls {
-  padding: 7px 15px 8px;
-}
-
-.booking__radio-halls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* padding: 7px 15px 8px; */
+  background: #fff;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33333;
   text-transform: uppercase;
   text-align: center;
   color: #000;
-  border: none;
-  border-radius: 8px;
-  min-width: 220px;
-  cursor: pointer;
+  flex-basis: 250px;
+  height: 55px;
+
+}
+
+.booking__radio-halls {
+  display: none;
 }
 
 .booking__field-game {
@@ -72,11 +77,10 @@
 .booking__field-box {
   display: flex;
   justify-content: space-between;
-  /* gap: 100px; */
-  /* flex-basis: 1080px; */
   padding-left: 100px;
   border: none;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .booking__field-console {
@@ -163,52 +167,20 @@
   margin-bottom: auto;
 }
 
+.booking__label-karaoke {
+  display: flex;
+  align-items: flex-end;
+}
+
 .booking__checkbox-karaoke {
   width: 25px;
   height: 25px;
   margin-right: 12px;
 }
 
-.booking__field {
-  border: none;
-  display: flex;
-  margin-bottom: 40px;
-}
-
-.booking__subtitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16667;
-  text-align: center;
-  margin-bottom: 38px;
-}
-
-.booking__list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-basis: 980px;
-}
-
-.booking__item {}
-
-.booking__label {
-  display: flex;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14286;
-  color: #fff;
-
-}
-
-.booking__text {}
-
-.booking__tel {}
-
-.booking__mail {}
-
-
 .booking__btn {
+  display: block;
+  margin-left: auto;
   border-radius: 10px;
   padding: 16px 50px;
   font-weight: 700;
@@ -216,4 +188,5 @@
   line-height: 1.27273;
   text-transform: uppercase;
   color: #6c0287;
+  border: none;
 }

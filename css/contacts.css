@@ -11,9 +11,8 @@
   margin-bottom: 54px;
 }
 
-.contacts__info {
+.contacts__box {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -51,41 +50,11 @@ svg {
   gap: 26px;
 }
 
-.contacts {}
-
-.container {}
-
-.contacts__title {}
-
 .contacts__box {
   display: flex;
   justify-content: space-between;
   margin-bottom: 156px;
 }
-
-.contacts__info {}
-
-.contacts__info-address {}
-
-.contacts__info-phone {}
-
-.contacts__info-mail {}
-
-.contacts__social {}
-
-.social {}
-
-.social__list {}
-
-.social__item {}
-
-.social__link {}
-
-.social__img {}
-
-.contacts__box-right {}
-
-.contacts__box-image {}
 
 .contacts__copyright {
   display: flex;
@@ -110,7 +79,7 @@ svg {
 
 .contacts__developer-item {}
 
-.contscts__developer-link {
+.contacts__developer-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14286;
