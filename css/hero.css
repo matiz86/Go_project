@@ -1,0 +1,98 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.hero__banner {
+  position: relative;
+  height: 823px;
+}
+
+.hero__banner:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/vr.png);
+  width: 675px;
+  height: 762px;
+  top: 61px;
+  right: 0;
+  z-index: 3;
+}
+
+.hero__banner:after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/down.svg);
+  width: 97px;
+  height: 97px;
+  bottom: 90px;
+  left: 544px;
+  z-index: 4;
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 1;
+  letter-spacing: -15px;
+  z-index: 2;
+}
+
+.hero__desc {
+  padding-left: 100px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.78571;
+  margin-bottom: 30px;
+}
+
+.hero-content__list {
+  display: flex;
+  align-items: center;
+  align-content: start;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.hero-content__item--left {
+  flex-basis: 193px;
+  max-height: 209px;
+}
+
+.hero-content__title-left {
+  font-weight: 900;
+  font-size: 100px;
+  color: #cd06ff;
+  text-align: center;
+}
+
+.hero-content__text {
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content__item--right {
+  max-width: 161px;
+  align-self: flex-end;
+}
+
+.hero-content__title-right {
+  font-weight: 900;
+  font-size: 75px;
+  font-variant: all-small-caps;
+  color: #cd06ff;
+}
+
+.hero__btn {
+  padding: 25px 69px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15385;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background: #6c0287;
+}
