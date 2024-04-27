@@ -48,12 +48,12 @@
           <p class="hero__desc">Новый формат игр и отдыха</p>
           <ul class="hero-content__list">
             <li class="hero-content__item hero-content__item--left">
-              <h2 class="hero-content__title-left">4</h2>
+              <p class="hero-content__title-left">4</p>
               <p class="hero-content__text">Тематических
                 зала</p>
             </li>
             <li class="hero-content__item hero-content__item--right">
-              <h2 class="hero-content__title-right">new</h2>
+              <p class="hero-content__title-right">new</p>
               <p class="hero-content__text">Новейшая
                 аппаратура</p>
             </li>
@@ -164,6 +164,7 @@
             <legend class="booking__title-game">Собери набор развлечений</legend>
 
             <fieldset class="booking__field-box">
+
               <fieldset class="booking__field-console">
                 <legend class="booking__subtitle-console">Приставка:</legend>
                 <ul class="booking__list-console">
@@ -236,14 +237,50 @@
                   </li>
                 </ul>
               </fieldset>
-
             </fieldset>
 
 
+
           </fieldset>
+          <fieldset class="booking__field-reserve reserve-block">
+            <legend class="booking__subtitle">Выбери дату и время</legend>
 
+            <div class="reserve-block__item reserve-block__item--first">
+              <div class="row-group">
+                <input type="text" placeholder="Дата" class="reserve-block__input" required name="date"
+                  onfocus="(this.type='date')" onblur="(this.type='text')">
+                <input type="text" placeholder="Время" class="reserve-block__input reserve-block--input--time" required
+                  name="time" onfocus="(this.type='time')" onblur="(this.type='text')">
+              </div>
+              <input type="text" placeholder="Сколько человек" class="reserve-block__input reserve-block__input--full"
+                required name="members" onfocus="(this.type='number')" onblur="(this.type='text')">
+            </div>
 
-<!-- 
+            <div class="reserve-block-item reserve-block-item--sec">
+              <div class="group">
+                <label for="name1" class="group-label">Имя</label>
+                <input class="group-input" type="text" id="name1" required name="firstname">
+              </div>
+              <div class="group">
+                <label for="name2" class="group-label">Фамилия</label>
+                <input class="group-input" type="text" id="name2" required name="lastname">
+              </div>
+            </div>
+            <div class="reserve-block-item reserve-block-item--third">
+              <div class="group-third">
+                <label for="phone" class="group-phone">Телефон</label>
+                <input class="group-input" type="text" id="phone" required name="phone">
+              </div>
+              <div class="group-third">
+                <label for="t,ail" class="group-email">E-mail</label>
+                <input class="group-input" type="text" id="email" required name="mail">
+              </div>
+            </div>
+          </fieldset>
+          <div class="button__reserve">
+            <button class="booking__btn" type="submit">Забронировать</button>
+          </div>
+          <!-- 
           <fieldset class="booking__field">
             <legend class="booking__subtitle">Выбери дату и время</legend>
             <ul class="booking__list-time">
@@ -288,7 +325,7 @@
 
 
 
-          <button class="booking__btn" type="submit">Забронировать</button>
+
           <!-- <input class="booking__checkbox" type="checkbox" value="permission" name="permission" required> Согласен на
           обработку персональных
           данных -->

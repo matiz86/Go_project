@@ -47,23 +47,29 @@
 
 .about__citate-desc:before {
   position: absolute;
-  content: "";
-  background-image: url(../img/quotes.svg);
-  background-repeat: no-repeat;
+  content: "\201c";
   left: 0px;
   width: 22px;
   height: 50px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  color: #6c0287;
 }
 
 .about__citate-desc:after {
   position: absolute;
-  content: "";
-  background-image: url(../img/quotes.svg);
-  background-repeat: no-repeat;
-  right: 0px;
-  top: 125px;
+  content: "\201c";
+  right: 107px;
+  top: 134px;
   width: 22px;
   height: 50px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.13636;
+  text-transform: uppercase;
+  color: #6c0287;
   transform: rotate(180deg);
 }
 

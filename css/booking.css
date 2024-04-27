@@ -178,6 +178,134 @@
   margin-right: 12px;
 }
 
+.booking__field-reserve {
+  display: flex;
+  margin: 0 auto;
+}
+
+.reserve-block {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  align-items: end;
+  max-width: 980px;
+  margin-bottom: 40px;
+
+}
+
+.booking__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.reserve-block__item {}
+
+.reserve-block__item--first {
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+}
+
+.row-group {
+  display: flex;
+  column-gap: 32px;
+}
+
+.reserve-block__input {
+  width: 134px;
+  height: 52px;
+}
+
+.reserve-block__input::-webkit-input-placeholder {
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  width: 100%;
+  height: 23px;
+  content: "Дата";
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #211e1e;
+
+}
+
+.reserve-block__input--time::-webkit-input-placeholder {
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  width: 100%;
+  height: 23px;
+  content: "Время";
+  display: block;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.reserve-block__input--full {
+  width: 100%;
+}
+
+.reserve-block-item {}
+
+.reserve-block-item--sec {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  max-width: 280px;
+  flex-grow: 1;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  max-width: 280px;
+}
+
+.group-label {
+  font-size: 14px;
+}
+
+.group-input {
+  width: 100%;
+  height: 52px;
+  display: block;
+}
+
+.reserve-block-item--third {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.group-third {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  max-width: 300px;
+}
+
+.group-phone {}
+
+.group-email {}
+
 .booking__btn {
   display: block;
   margin-left: auto;

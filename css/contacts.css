@@ -74,10 +74,7 @@ svg {
   flex-direction: column;
   margin-bottom: 6px;
   text-align-last: right;
-
 }
-
-.contacts__developer-item {}
 
 .contacts__developer-link {
   font-weight: 400;
