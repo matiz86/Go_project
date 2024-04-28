@@ -19,17 +19,6 @@
   z-index: 3;
 }
 
-.hero__banner:after {
-  position: absolute;
-  content: "";
-  background-image: url(../img/down.svg);
-  width: 97px;
-  height: 97px;
-  bottom: 90px;
-  left: 544px;
-  z-index: 4;
-}
-
 .hero__title {
   font-weight: 900;
   font-size: 150px;
@@ -95,4 +84,13 @@
   border: none;
   border-radius: 10px;
   background: #6c0287;
+}
+
+.hero__btn-arrow {
+  position: absolute;
+  content: "";
+  height: 97px;
+  bottom: 90px;
+  left: 544px;
+  z-index: 4;
 }

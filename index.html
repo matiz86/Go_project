@@ -14,9 +14,9 @@
   <header class="header">
     <div class="container">
       <div class="header__inner">
-        <logo class="logo">
+        <a href="#" class="logo">
           <img class="logo__img" src="img/logo.svg" alt="Логотип" width="120" height="66" loading="lazy">
-        </logo>
+        </a>
         <nav class="nav" title="navigation">
           <ul class="nav__list">
             <li class="nav__item">
@@ -36,9 +36,10 @@
             </li>
           </ul>
         </nav>
-        <button class="header__btn" type="submit">Заказать звонок</button>
+        <button class="header__btn" type="button">Заказать звонок</button>
       </div>
     </div>
+
   </header>
   <main>
     <section class="hero">
@@ -58,7 +59,10 @@
                 аппаратура</p>
             </li>
           </ul>
-          <button class="hero__btn">Забронировать</button>
+          <a href="#booking" class="hero__btn">Забронировать</a>
+          <a class="hero__btn-arrow" href="#contacts">
+            <img class="hero__btn-img" src="img/down.svg" alt="Изображение ссылки в виде стрелки">
+          </a>
         </div>
       </div>
     </section>
@@ -238,9 +242,6 @@
                 </ul>
               </fieldset>
             </fieldset>
-
-
-
           </fieldset>
           <fieldset class="booking__field-reserve reserve-block">
             <legend class="booking__subtitle">Выбери дату и время</legend>
@@ -276,59 +277,8 @@
                 <input class="group-input" type="text" id="email" required name="mail">
               </div>
             </div>
-          </fieldset>
-          <div class="button__reserve">
             <button class="booking__btn" type="submit">Забронировать</button>
-          </div>
-          <!-- 
-          <fieldset class="booking__field">
-            <legend class="booking__subtitle">Выбери дату и время</legend>
-            <ul class="booking__list-time">
-              <li class="booking__item">
-                <input placeholder="Дата" class="booking__field--date" type="text" onfocus="(this.type='date')"
-                  onblur="(this.type='text')" required="" name="date">
-              </li>
-              <li class="booking__item">
-                <input placeholder="Время" class="booking__field--time" type="text" onfocus="(this.type='time')"
-                  onblur="(this.type='text')" required="" name="time">
-              </li>
-              <li class="booking__item">
-                <input class="booking__text" id="qty" type="text" name="quantity" required=""
-                  placeholder="Сколько человек">
-              </li>
-            </ul>
-
-            <ul class="booking__list">
-              <li class="booking__item">
-                <label class="booking__label" for="name">Имя<abbr title="required"></abbr></label>
-                <input class="booking__text" id="name" type="text" name="username" required>
-              </li>
-              <li class="booking__item">
-                <label class="booking__label" for="surname">Фамилия<abbr title="required"></abbr></label>
-                <input class="booking__text" id="surname" type="text" name="surname" required>
-              </li>
-            </ul>
-
-            <ul class="booking__list">
-              <li class="booking__item">
-                <label class="booking__label" for="tel">Телефон<abbr title="required"></abbr></label>
-                <input class="booking__tel" id="tel" type="tel" name="phone" required title="+7___-___-__-__"
-                  pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-              </li>
-              <li class="booking__item">
-                <label class="booking__label" for="mail">E-mail
-                </label>
-                <input class="booking__mail" type="email" id="mail" name="email" required>
-              </li>
-            </ul>
-          </fieldset> -->
-
-
-
-
-          <!-- <input class="booking__checkbox" type="checkbox" value="permission" name="permission" required> Согласен на
-          обработку персональных
-          данных -->
+          </fieldset>
         </form>
       </div>
     </section>
@@ -414,6 +364,7 @@
       </div>
 
     </section>
+
   </main>
 
   <footer>
@@ -507,48 +458,7 @@
         </div>
       </div>
     </section>
-
   </footer>
-  <!-- <li>
-          <a href="https://vk.com/" target="_blank">Vkontakte</a>
-        </li>
-        <li>
-          <a href="https://telegram.org/" target="_blank">Telegram</a>
-        </li>
-        </ul> -->
-
-
-  <!-- <h2>Заказать звонок</h2>
-        <div>
-          <form id="go_form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-            <p>
-              <label>
-                Имя <br>
-                <input type="text" name="user_name" required>
-              </label>
-            </p>
-            <p>
-              <label>
-                Фамилия <br>
-                <input type="text" name="user_surname" required>
-              </label>
-            </p>
-            <p>
-              <label>
-                Номер телефона <br>
-                <input type="tel" name="tel" required title="+7___-___-__-__"
-                  pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$">
-              </label>
-            </p>
-            <button type="submit">Перезвоните мне</button>
-          </form>
-        </div> -->
-
-
-
-
-
-
 </body>
 
 </html>
