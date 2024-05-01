@@ -126,27 +126,18 @@
 }
 
 .hero__btn-arrow:focus {
-  /* background: rgba(196, 196, 196, 0); */
-  /* border: 1px solid #cd06ff; */
-  width: 99px;
-  height: 99px;
 }
 
 .hero__btn-arrow:active {
   background-color: #cd06ff;
   border-radius: 100%;
   stroke-width: 1px;
-  stroke: #cd06ff;
+
+  circle {
+    stroke: #cd06ff;
+  }
 
   rect {
     fill: #fff;
   }
 }
-
-.social__link path:hover {
-  fill: #ead354;
-}
-
-.hero__btn-arrow:focus {}
-
-.hero__btn-arrow:active {}

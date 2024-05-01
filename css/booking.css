@@ -133,6 +133,19 @@
   margin-right: 12px;
 }
 
+.booking__radio-console:focus {
+  border: 1px solid #cd06ff;
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  background-color: transparent;
+
+  circle {
+    border-radius: 100%;
+    fill: #fff;
+  }
+}
+
 .booking__field-table {
   border: none;
   flex-basis: 300px;
