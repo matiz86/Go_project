@@ -16,7 +16,8 @@
   display: flex;
   justify-content: center;
 }
-.contacts__info-list{
+
+.contacts__info-list {
   font-style: normal;
 }
 
@@ -54,11 +55,18 @@
   gap: 26px;
 }
 
-.social__link:hover path {
+.social__link {
+  display: block;
+  height: 50px;
+  width: 50px;
+  outline: 1px solid transparent;
+}
+
+.social__link:hover path   {
   fill: #eadeed;
 }
 
-.social__link:focus path {
+.social__link:focus  {
   fill: #eadeed;
   border: 1px solid #cd06ff;
 }

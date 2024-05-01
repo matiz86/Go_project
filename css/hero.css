@@ -108,6 +108,8 @@
 }
 
 .hero__btn-arrow {
+  width: 99px;
+  height: 99px;
   fill: transparent;
 
   rect {
@@ -126,6 +128,9 @@
 }
 
 .hero__btn-arrow:focus {
+  .circle {
+    border: 1px solid #cd06ff;
+  }
 }
 
 .hero__btn-arrow:active {
