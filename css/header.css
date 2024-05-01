@@ -38,3 +38,17 @@
   background-color: transparent;
   cursor: pointer;
 }
+
+.header__btn:hover {
+  background-color: #6c0287;
+  border: 3px solid #6c0287;
+}
+
+.header__btn:focus {
+  background-color: #6c0287;
+}
+
+.header__btn:active {
+  background-color: #640aa3;
+  border: 1px solid #000;
+}

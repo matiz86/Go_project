@@ -17,7 +17,7 @@
   justify-content: center;
 }
 
-svg {
+.contacts__info-img {
   display: inline-flex;
   margin-right: 30px;
 }
@@ -52,6 +52,19 @@ svg {
   gap: 26px;
 }
 
+.social__link:hover path {
+  fill: #eadeed;
+}
+
+.social__link:focus path {
+  fill: #eadeed;
+  border: 1px solid #cd06ff;
+}
+
+.social__link:active path {
+  fill: #cd06ff;
+}
+
 .contacts__box {
   display: flex;
   justify-content: space-between;
@@ -76,6 +89,10 @@ svg {
   flex-direction: column;
   margin-bottom: 6px;
   text-align-last: right;
+}
+
+.contacts__developer-text {
+  margin-bottom: 6px;
 }
 
 .contacts__developer-link {
