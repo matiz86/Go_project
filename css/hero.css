@@ -84,6 +84,7 @@
   border: none;
   border-radius: 10px;
   background: #6c0287;
+  transition: color 0.3s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -101,13 +102,31 @@
 .hero__btn-link {
   position: absolute;
   content: "";
-  height: 97px;
   bottom: 90px;
   left: 544px;
   z-index: 3;
+
+  svg {
+    color: transparent;
+    width: 99px;
+    height: 99px;
+    border-radius: 100%;
+    stroke-width: 1px;
+    stroke: #fff;
+  }
+
+  rect {
+    fill: #fff;
+  }
 }
 
-.hero__btn-arrow {
+
+
+.hero__btn-link:hover {
+  fill: #6c0287;
+}
+
+/* .hero__btn-arrow {
   width: 99px;
   height: 99px;
   fill: transparent;
@@ -145,4 +164,4 @@
   rect {
     fill: #fff;
   }
-}
+} */

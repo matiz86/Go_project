@@ -52,6 +52,8 @@
   color: #000;
   flex-basis: 250px;
   height: 55px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
 }
 
 .booking__label-halls:hover {
@@ -125,25 +127,63 @@
   font-weight: 400;
   font-size: 22px;
   color: #fff;
+  position: relative;
+  padding-left: 37px;
 }
 
 .booking__radio-console {
   width: 27px;
   height: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   margin-right: 12px;
 }
 
-.booking__radio-console:focus {
-  border: 1px solid #cd06ff;
-  width: 33px;
-  height: 33px;
-  border-radius: 100%;
-  background-color: transparent;
+.booking__radio-console::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-color: white;
+  border: 3px solid #640AA3;
+  border-radius: 50%;
+}
 
-  circle {
-    border-radius: 100%;
-    fill: #fff;
-  }
+.booking__radio-console::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 27px;
+  height: 27px;
+  opacity: 0;
+  background-color: #640AA3;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.booking__radio-console:checked::before {
+  background-color: transparent;
+}
+
+.booking__radio-console:checked::after {
+  opacity: 1;
+}
+
+.booking__radio-console:focus {
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline-color: #CD06FF;
+  width: 27px;
+  height: 27px;
 }
 
 .booking__field-table {
@@ -170,13 +210,63 @@
   align-items: center;
   font-weight: 400;
   font-size: 22px;
+  color: #fff;
+  position: relative;
+  padding-left: 37px;
 }
 
 .booking__checkbox-table {
   width: 25px;
   height: 25px;
-  margin-right: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
+
+.booking__checkbox-table::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 3px solid #640AA3;
+}
+
+.booking__checkbox-table:checked::before {
+  background-color: transparent;
+}
+
+.booking__checkbox-table::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  background-color: #640AA3;
+  border: 2px solid black;
+}
+
+.booking__checkbox-table:checked::after {
+  opacity: 1;
+}
+
+.booking__checkbox-table:focus {
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline-color: #CD06FF;
+  width: 25px;
+  height: 25px;
+}
+
 
 .booking__field-karaoke {
   border: none;
@@ -199,13 +289,64 @@
 
 .booking__label-karaoke {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  position: relative;
+  padding-left: 37px;
 }
 
 .booking__checkbox-karaoke {
   width: 25px;
   height: 25px;
-  margin-right: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.booking__checkbox-karaoke::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 3px solid #640AA3;
+}
+
+.booking__checkbox-karaoke::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  opacity: 0;
+  background-color: #640AA3;
+  border: 2px solid black;
+}
+
+.booking__checkbox-karaoke:checked::before {
+  background-color: transparent;
+}
+
+.booking__checkbox-karaoke:checked::after {
+  opacity: 1;
+}
+
+.booking__checkbox-karaoke:focus {
+  outline-offset: 1px;
+  outline-width: 1px;
+  outline-color: #CD06FF;
+  width: 25px;
+  height: 25px;
 }
 
 .booking__field-reserve {
@@ -351,7 +492,7 @@ input[type="number"]:focus {
   line-height: 1.27273;
   text-transform: uppercase;
   color: #6c0287;
-  border: none;
+  border: 3px solid transparent;
 }
 
 .booking__btn:hover {

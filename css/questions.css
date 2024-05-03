@@ -23,18 +23,23 @@
   padding: 30px 70px;
   list-style: none;
 }
-.questions__button{
+
+.questions__button {
   background-color: transparent;
 }
 
 .questions__btn--violet {
   color: transparent;
   stroke: #440F51;
+  width: 46px;
+  height: 46px;
+  transition: color 0.3s ease-in-out;
 }
 
 .questions__btn--white {
   color: transparent;
   stroke: #fff;
+  transition: color 0.3s ease-in-out;
 }
 
 .questions__btn--violet::after {

@@ -28,10 +28,18 @@
 
 .contacts__info-address {
   display: flex;
+  align-items: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16667;
   margin-bottom: 38px;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+    color: #cd06ff;
+  }
 }
 
 .contacts__info-phone {
@@ -40,6 +48,13 @@
   font-size: 24px;
   line-height: 1.16667;
   margin-bottom: 11px;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+    color: #cd06ff;
+  }
 }
 
 .contacts__info-mail {
@@ -48,6 +63,13 @@
   font-size: 24px;
   line-height: 1.16667;
   margin-bottom: 39px;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    margin-right: 28px;
+    color: #cd06ff;
+  }
 }
 
 .social__list {
@@ -56,23 +78,25 @@
 }
 
 .social__link {
+  color: #fff;
   display: block;
   height: 50px;
   width: 50px;
   outline: 1px solid transparent;
+  transition: color 0.3s ease-in-out;
 }
 
-.social__link:hover path   {
-  fill: #eadeed;
+.social__link:hover {
+  color: #eadeed;
 }
 
-.social__link:focus  {
+.social__link:focus {
   fill: #eadeed;
   border: 1px solid #cd06ff;
 }
 
-.social__link:active path {
-  fill: #cd06ff;
+.social__link:active {
+  color: #cd06ff;
 }
 
 .contacts__box {
@@ -97,8 +121,11 @@
 .contacts__developer-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 6px;
   text-align-last: right;
+}
+
+.contacts__developer-item:not(:last-child) {
+  margin-bottom: 6px;
 }
 
 .contacts__developer-text {
@@ -110,4 +137,9 @@
   font-size: 14px;
   line-height: 1.14286;
   color: #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.contacts__developer-link:hover {
+  color: #cd06ff;
 }
