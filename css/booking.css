@@ -493,6 +493,7 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: #6c0287;
   border: 3px solid transparent;
+  transition: color 0.3s ease-in-out;
 }
 
 .booking__btn:hover {
