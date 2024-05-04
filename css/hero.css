@@ -84,7 +84,7 @@
   border: none;
   border-radius: 10px;
   background: #6c0287;
-  transition: color 0.3s ease-in-out;
+  transition:  0.3s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -131,43 +131,3 @@
   outline-offset: 0;
   outline: 2px solid #cd06ff;
 }
-
-/* .hero__btn-arrow {
-  width: 99px;
-  height: 99px;
-  fill: transparent;
-
-  rect {
-    fill: #fff;
-  }
-}
-
-.hero__btn-arrow:hover {
-  background-color: #fff;
-  border-radius: 100%;
-  stroke-width: 1px;
-
-  rect {
-    fill: #6C0287;
-  }
-}
-
-.hero__btn-arrow:focus {
-  .circle {
-    border: 1px solid #cd06ff;
-  }
-}
-
-.hero__btn-arrow:active {
-  background-color: #cd06ff;
-  border-radius: 100%;
-  stroke-width: 1px;
-
-  circle {
-    stroke: #cd06ff;
-  }
-
-  rect {
-    fill: #fff;
-  }
-} */

@@ -78,12 +78,12 @@
 }
 
 .social__link {
-  color: #fff;
+  color: #ffffff;
   display: block;
   height: 50px;
   width: 50px;
   outline: 1px solid transparent;
-  transition: color 0.3s ease-in-out;
+  transition:  0.3s ease-in-out;
 }
 
 .social__link:hover {

@@ -20,8 +20,13 @@
 
 .relax__item {
   flex-basis: 380px;
+  transition: 0.3s ease-in-out;
+}
+
+.relax__item:hover {
+  transform: scale(1.1);
 }
 
 .relax__img {
-  width: 100%;  
+  width: 100%;
 }

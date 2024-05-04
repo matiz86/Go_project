@@ -53,7 +53,7 @@
   flex-basis: 250px;
   height: 55px;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .booking__label-halls:hover {
@@ -493,7 +493,7 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: #6c0287;
   border: 3px solid transparent;
-  transition: color 0.3s ease-in-out;
+  transition:  0.3s ease-in-out;
 }
 
 .booking__btn:hover {
