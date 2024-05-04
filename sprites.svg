@@ -1,10 +1,11 @@
 <svg class="hidden" display="none" xmlns="http://www.w3.org/2000/svg">
-  <symbol viewBox="0 0 97 97" id="down" fill="currentColor">
-    <circle cx="48.5" cy="48.5" r="48" />
-    <rect x="34.4255" y="43.9161" width="1.82001" height="20.0201"
-      transform="rotate(-44.9975 34.4255 43.9161)" />
+  <symbol id="down" viewBox="0 0 97 97">
+    <circle cx="48.5" cy="48.5" r="48" ></circle>
+    <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201"
+      transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor"></rect>
     <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201"
-      transform="rotate(-134.997 48.5807 58.0737)" />
+      transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor"></rect>
+
   </symbol>
   <symbol id="vk" viewbox="0 0 50 50">
     <path

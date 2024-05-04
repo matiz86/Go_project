@@ -100,30 +100,36 @@
 }
 
 .hero__btn-link {
+  display: block;
   position: absolute;
-  content: "";
   bottom: 90px;
   left: 544px;
   z-index: 3;
-
-  svg {
-    color: transparent;
-    width: 99px;
-    height: 99px;
-    border-radius: 100%;
-    stroke-width: 1px;
-    stroke: #fff;
-  }
-
-  rect {
-    fill: #fff;
-  }
+  fill: transparent;
 }
 
+.down {
+  stroke: #fff;
+  width: 99px;
+  height: 99px;
+  transition: fill 0.3s, color 0.3s;
+}
 
+.down:hover {
+  fill: #fff;
+  color: #cd06ff;
+  stroke: #fff;
+}
 
-.hero__btn-link:hover {
-  fill: #6c0287;
+.down:active {
+  color: #fff;
+  fill: #cd06ff;
+  stroke: #cd06ff;
+}
+
+.hero__btn-link:focus {
+  outline-offset: 0;
+  outline: 2px solid #cd06ff;
 }
 
 /* .hero__btn-arrow {
