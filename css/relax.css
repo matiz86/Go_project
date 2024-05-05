@@ -8,7 +8,7 @@
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
+  color: var(--main-color);
   margin-bottom: 40px;
 }
 
@@ -22,6 +22,9 @@
   flex-basis: 380px;
   transition: 0.3s ease-in-out;
 }
+
+.relax__item:nth-child(2),
+.relax__item:nth-child(5) {}
 
 .relax__item:hover {
   transform: scale(1.1);

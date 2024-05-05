@@ -23,13 +23,13 @@
   font-size: 22px;
   line-height: 2.27273;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--main-color);
   transition:  0.3s ease-in-out;
 
 }
 
 .nav__link:hover {
-  color: #cd06ff;
+  color: var(--electric-violet);
 }
 
 .header__btn {
@@ -38,8 +38,8 @@
   font-size: 22px;
   line-height: 1.36364;
   text-transform: uppercase;
-  color: #fff;
-  border: 3px solid #cd06ff;
+  color: var(--main-color);
+  border: 3px solid var(--electric-violet);
   border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
@@ -47,12 +47,12 @@
 }
 
 .header__btn:hover {
-  background-color: #6c0287;
-  border: 3px solid #6c0287;
+  background-color: var(--purple);
+  border: 3px solid var(--purple);
 }
 
 .header__btn:focus {
-  background-color: #6c0287;
+  background-color: var(--purple);
   outline: none;
   border: 3px solid transparent;
 }
@@ -60,5 +60,5 @@
 .header__btn:active {
   background-color: #640aa3;
   border: 3px solid transparent;
-  outline: 1px solid #000;
+  outline: 1px solid var(--dark-color);
 }

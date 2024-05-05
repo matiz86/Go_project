@@ -38,7 +38,7 @@
     width: 32px;
     height: 32px;
     margin-right: 28px;
-    color: #cd06ff;
+    color: var(--electric-violet);
   }
 }
 
@@ -53,7 +53,7 @@
     width: 32px;
     height: 32px;
     margin-right: 28px;
-    color: #cd06ff;
+    color: var(--electric-violet);
   }
 }
 
@@ -68,7 +68,7 @@
     width: 32px;
     height: 32px;
     margin-right: 28px;
-    color: #cd06ff;
+    color: var(--electric-violet);
   }
 }
 
@@ -92,11 +92,11 @@
 
 .social__link:focus {
   fill: #eadeed;
-  border: 1px solid #cd06ff;
+  border: 1px solid var(--electric-violet);
 }
 
 .social__link:active {
-  color: #cd06ff;
+  color: var(--electric-violet);
 }
 
 .contacts__box {
@@ -115,7 +115,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14286;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .contacts__developer-list {
@@ -136,10 +136,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.14286;
-  color: #fff;
+  color: var(--main-color);
   transition: color 0.3s ease-in-out;
 }
 
 .contacts__developer-link:hover {
-  color: #cd06ff;
+  color: var(--electric-violet);
 }

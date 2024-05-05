@@ -1,5 +1,5 @@
 .booking {
-  background: #440f51;
+  background: var(--jagger);
 }
 
 .booking__form {
@@ -42,8 +42,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  /* padding: 7px 15px 8px; */
-  background: #fff;
+  background: var(--main-color);
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33333;
@@ -62,14 +61,14 @@
 }
 
 .booking__label-halls:focus {
-  background-color: #fff;
+  background-color: var(--main-color);
   border: 3px solid #640aa3;
 }
 
 .booking__label-halls:active {
   background-color: #6c0287;
-  border: 3px solid #fff;
-  color: #fff;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
 }
 
 .booking__radio-halls {
@@ -111,7 +110,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16667;
-  color: #fff;
+  color: var(--main-color);
   margin-bottom: 24px;
 }
 
@@ -126,7 +125,7 @@
   align-items: center;
   font-weight: 400;
   font-size: 22px;
-  color: #fff;
+  color: var(--main-color);
   position: relative;
   padding-left: 37px;
 }
@@ -151,7 +150,7 @@
   display: block;
   width: 27px;
   height: 27px;
-  background-color: white;
+  background-color: var(--main-color);
   border: 3px solid #640AA3;
   border-radius: 50%;
 }
@@ -166,7 +165,7 @@
   height: 27px;
   opacity: 0;
   background-color: #640AA3;
-  border: 2px solid #000;
+  border: 2px solid var(--dark-color);
   border-radius: 50%;
 }
 
@@ -210,7 +209,7 @@
   align-items: center;
   font-weight: 400;
   font-size: 22px;
-  color: #fff;
+  color: var(--main-color);
   position: relative;
   padding-left: 37px;
 }
@@ -234,7 +233,7 @@
   display: block;
   width: 25px;
   height: 25px;
-  background-color: white;
+  background-color: var(--main-color);
   border: 3px solid #640AA3;
 }
 
@@ -252,7 +251,7 @@
   height: 25px;
   opacity: 0;
   background-color: #640AA3;
-  border: 2px solid black;
+  border: 2px solid var(--dark-color);
 }
 
 .booking__checkbox-table:checked::after {
@@ -292,7 +291,7 @@
   align-items: center;
   font-weight: 400;
   font-size: 22px;
-  color: #fff;
+  color: var(--main-color);
   position: relative;
   padding-left: 37px;
 }
@@ -316,7 +315,7 @@
   display: block;
   width: 25px;
   height: 25px;
-  background-color: white;
+  background-color: var(--main-color);
   border: 3px solid #640AA3;
 }
 
@@ -330,7 +329,7 @@
   height: 25px;
   opacity: 0;
   background-color: #640AA3;
-  border: 2px solid black;
+  border: 2px solid var(--dark-color);
 }
 
 .booking__checkbox-karaoke:checked::before {
@@ -491,19 +490,19 @@ input[type="number"]:focus {
   font-size: 22px;
   line-height: 1.27273;
   text-transform: uppercase;
-  color: #6c0287;
+  color: var(--purple);
   border: 3px solid transparent;
   transition:  0.3s ease-in-out;
 }
 
 .booking__btn:hover {
   background-color: #eadeed;
-  border: 3px solid #6c0287;
+  border: 3px solid var(--purple);
 }
 
 .booking__btn:focus {
   background-color: #fff;
-  border: 3px solid #6c0287;
+  border: 3px solid var(--purple);
 }
 
 .booking__btn:active {
