@@ -1,0 +1,32 @@
+.pages__room {
+  padding-bottom: 100px;
+}
+
+.pages__room-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.pages__room-content {
+  display: grid;
+  grid-template-columns: 600px auto;
+  column-gap: 80px;
+  align-items: center;
+}
+
+.pages__room-descr {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.pages__room-descr:not(:last-child) {
+  margin-bottom: 20px;
+}

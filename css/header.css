@@ -1,5 +1,6 @@
 .header {
   padding-top: 30px;
+
 }
 
 .header__inner {
@@ -10,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .nav__list {
@@ -24,7 +26,7 @@
   line-height: 2.27273;
   text-transform: uppercase;
   color: var(--main-color);
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 
 }
 
@@ -43,7 +45,7 @@
   border-radius: 10px;
   background-color: transparent;
   cursor: pointer;
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .header__btn:hover {
@@ -61,4 +63,179 @@
   background-color: #640aa3;
   border: 3px solid transparent;
   outline: 1px solid var(--dark-color);
+}
+
+
+
+@media(max-width: 1199.99px) {
+
+  .logo {
+    width: 87px;
+    height: 55px;
+  }
+
+  .container {
+    padding: 0 60px;
+  }
+
+  .nav__list {
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 18px;
+    line-height: 1.22222;
+
+  }
+
+  .nav__link:hover {
+    color: var(--electric-violet);
+  }
+
+  .header__btn {
+    font-size: 18px;
+    line-height: 1.33333;
+    padding: 11px 26px;
+  }
+
+  .header__btn:hover {
+    background-color: var(--purple);
+    border: 3px solid var(--purple);
+  }
+
+  .header__btn:focus {
+    background-color: var(--purple);
+    outline: none;
+    border: 3px solid transparent;
+  }
+
+  .header__btn:active {
+    background-color: #640aa3;
+    border: 3px solid transparent;
+    outline: 1px solid var(--dark-color);
+  }
+}
+
+/* Vibes */
+
+.header-vibes {
+  padding-bottom: 20px;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__link:hover {
+  color: var(--electric-violet);
+
+  svg {
+    fill: var(--electric-violet);
+    ;
+  }
+}
+
+/* Starwars */
+
+.header-starwars {
+  padding-bottom: 20px;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__link:hover {
+  color: var(--electric-violet);
+
+  svg {
+    fill: var(--electric-violet);
+    ;
+  }
+}
+
+/* Neon */
+
+.header-neon {
+  padding-bottom: 20px;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__link:hover {
+  color: var(--electric-violet);
+
+  svg {
+    fill: var(--electric-violet);
+    ;
+  }
+}
+
+/* wildwest */
+
+.header-wildwest {
+  padding-bottom: 20px;
+}
+
+.header__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27273;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    fill: #fff;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.header__link:hover {
+  color: var(--electric-violet);
+
+  svg {
+    fill: var(--electric-violet);
+    ;
+  }
 }

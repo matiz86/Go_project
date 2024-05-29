@@ -27,6 +27,15 @@
   z-index: 2;
 }
 
+.hero__title-vibes {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
 .hero__desc {
   padding-left: 100px;
   font-weight: 400;
@@ -84,7 +93,7 @@
   border: none;
   border-radius: 10px;
   background: var(--purple);
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .hero__btn:hover {
@@ -130,4 +139,197 @@
 .hero__btn-link:focus {
   outline-offset: 0;
   outline: 2px solid var(--electric-violet);
+}
+
+@media(max-width: 1199.99px) {
+
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
+
+  .hero__banner {
+    height: 583px;
+  }
+
+  .hero__banner:before {
+    position: absolute;
+    content: "";
+    background-image: url(../img/vr.png);
+    max-width: 675px;
+    height: 100%;
+    top: 40px;
+    right: -108px;
+    z-index: 3;
+  }
+
+  .hero__title {
+    font-size: 120px;
+    line-height: 1;
+    letter-spacing: -0.1em;
+    margin-bottom: 20px;
+  }
+
+  .hero__desc {
+    font-size: 22px;
+    line-height: 1.36364;
+    margin-bottom: 30px;
+  }
+
+  /* .hero-content__item{
+      margin-bottom: 80px;
+    } */
+
+  .hero-content__item--left {
+    flex-basis: 168px;
+    max-height: 173px;
+  }
+
+  .hero-content__title-left {
+    font-size: 80px;
+  }
+
+  .hero-content__text {
+    font-size: 26px;
+  }
+
+  .hero-content__item--right {
+    max-width: 140px;
+    align-self: flex-end;
+  }
+
+  .hero-content__title-right {
+    font-size: 60px;
+  }
+
+  .hero__btn {
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: 1.36364;
+  }
+
+  .down {
+    width: 69px;
+    height: 69px;
+  }
+
+  .down:hover {
+    fill: var(--main-color);
+    color: var(--electric-violet);
+    stroke: var(--main-color);
+  }
+
+  .down:active {
+    color: var(--main-color);
+    fill: var(--electric-violet);
+    stroke: var(--electric-violet);
+  }
+
+  .hero__btn-link:focus {
+    outline-offset: 0;
+    outline: 2px solid var(--electric-violet);
+  }
+}
+
+/* Vibes */
+
+.banner {
+  padding-bottom: 100px;
+}
+
+.banner__content-vibes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/vibes-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 750px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+/* Starwars */
+
+.banner {
+  padding-bottom: 100px;
+}
+
+.banner__content-starwars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/starwars-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 750px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+/* Neon */
+
+.banner {
+  padding-bottom: 100px;
+}
+
+.banner__content-neon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/neon-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 750px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+/* wildwest */
+.banner {
+  padding-bottom: 100px;
+}
+
+.banner__content-wildwest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/wildwest-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 750px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
 }

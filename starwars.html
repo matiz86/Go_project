@@ -1,11 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Star wars</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/icon.svg
+  ">
+  <link rel="stylesheet" href="index.css">
+  <title>Go</title>
 </head>
-<body style="background-color: lightsalmon;">
-  <a href="index.html">Go index</a>
+
+<body>
+
+  <header class="header header-starwars">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img class="logo__img" src="img/logo.svg" alt="Логотип" width="120" height="66" loading="lazy">
+        </a>
+        <nav class="nav" title="navigation">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#halls" class="nav__link">залы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#booking" class="nav__link">Бронь</a>
+            </li>
+            <li class="nav__item">
+              <a href="#reviews" class="nav__link">отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__btn" type="button">Заказать звонок</button>
+      </div>
+      <a class="header__link" href="index.html">
+        <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM31 7L1 7V9L31 9V7Z" />
+        </svg>
+        Вернуться назад</a>
+    </div>
+
+  </header>
+
+  <main>
+    <section class="banner">
+      <div class="banner__content-starwars">
+        <h2 class="banner__title">Star wars</h2>
+      </div>
+
+    </section>
+    <div class="container container__descr">
+      <p class="pages__descr">
+        Здесь вы&nbsp;встретите атрибуты вселенной STAR WARS. Сможете ощутить себя на тех планетах, где
+        разворачивается
+        история STAR WARS и&nbsp;ощутить себя в&nbsp;роли героев наcтоящей саги.
+      </p>
+    </div>
+
+    <section class="pages__room">
+      <div class="container">
+        <h2 class="pages__room-title">Что есть в комнате?</h2>
+        <div class="pages__room-content">
+          <img class="pages__room-img" src="img/room-2.jpg" alt="Изображение аудио кассет">
+          <div class="pages__room-text">
+            <p class="pages__room-descr">В комнате STAR WARS есть игровые зоны в виде космических кораблей, командных
+              пунктов
+              и космических планет.</p>
+            <p class="pages__room-descr">Так же вы сможете воспользоваться игровыми манипуляторами, приставками
+              консолями или
+              просто просмотреть любые серии саги
+              на межпланетных экранах.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms">
+      <div class="container">
+        <h2 class="rooms__title">
+          Другие комнаты
+        </h2>
+        <ul class="rooms__list">
+          <li class="rooms__item">
+            <img class="rooms__img" src="img/rooms-4.jpg" alt="vibes img">
+            <a class="rooms__link" href="vibes.html">80’s
+              vibes</a>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms__img" src="img/rooms-1.jpg" alt="Wild West img">
+            <a class="rooms__link" href="wildwest.html">Wild <br>
+              west</a>
+          </li>
+          <li class="rooms__item">
+            <img class="rooms__img" src="img/rooms-3.jpg" alt="neon img">
+            <a class="rooms__link" href="neon.html">neon <br>
+              style</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+  </main>
+  <footer>
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__box">
+          <address class="contacts__info">
+            <ul class="contacts__info-list">
+              <li class="contacts__info-item">
+                <p class="contacts__info-address">
+                  <svg>
+                    <use xlink:href="sprites.svg#address-icon"></use>
+                  </svg>
+                  г. Москва <br>ул. Усачёва, 29 к3
+                </p>
+              </li>
+              <li class="contacts__info-item">
+                <a class="contacts__info-phone" href="tel:89509302893">
+                  <svg>
+                    <use xlink:href="sprites.svg#phone-icon"></use>
+                  </svg>
+                  8 (950) 930 - 28 - 93</a>
+              </li>
+              <li class="contacts__info-item">
+                <a class="contacts__info-mail" href="mailto:GameOver@gmail.com">
+                  <svg>
+                    <use xlink:href="sprites.svg#mail-icon"></use>
+                  </svg>
+                  GameOver@gmail.com</a>
+              </li>
+            </ul>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg>
+                    <use xlink:href="sprites.svg#vk"></use>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg>
+                    <use xlink:href="sprites.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg>
+                    <use xlink:href="sprites.svg#pinteres"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg>
+                    <use xlink:href="sprites.svg#stumble"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <div class="contacts__box-right">
+            <img class="contacts__box-image" src="img/map.svg" alt="Изображение карты">
+          </div>
+        </div>
+        <div class="contacts__copyright">
+          <p class="contacts__copyright-text">© Game Over, 2022</p>
+          <ul class="contacts__developer-list">
+            <li class="contacts__developer-item">
+              <p class="contscts__developer-text">Design by Anastasia Ilina</p>
+            </li>
+            <li class="contacts__developer-item">
+              <a class="contacts__developer-link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <script>
+    document.addEventListener('click', event => { if (event.target.matches('button')) { event.target.focus() } })
+  </script>
+
+
 </body>
+
 </html>

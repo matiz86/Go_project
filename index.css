@@ -1,8 +1,12 @@
 @import "css/var.css";
 @import "css/normalize.css";
 @import "css/style.css";
+@import "css/pages__descr.css";
+@import "css/pages__room.css";
 @import "css/header.css";
+@import "css/header-vibes.css";
 @import "css/hero.css";
+@import "css/hero-vibes.css";
 @import "css/relax.css";
 @import "css/halls.css";
 @import "css/booking.css";
@@ -10,3 +14,4 @@
 @import "css/reviews.css";
 @import "css/questions.css";
 @import "css/contacts.css";
+@import "css/rooms.css";
