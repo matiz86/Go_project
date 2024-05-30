@@ -1,0 +1,68 @@
+/* Vibes */
+
+.banner {
+  padding-bottom: 100px;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 0.88889;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 750px;
+}
+
+.banner__content-vibes {
+  background-image: url('../img/vibes-bg.jpg');
+}
+
+.banner__content-starwars {
+  background-image: url('../img/starwars-bg.jpg');
+}
+
+.banner__content-neon {
+  background-image: url('../img/neon-bg.jpg');
+}
+
+.banner__content-wildwest {
+  background-image: url('../img/wildwest-bg.jpg');
+}
+
+@media(max-width: 1199.99px) {
+  .banner {
+    padding-bottom: 70px;
+  }
+
+  .banner__content {
+    height: 534px;
+  }
+}
+
+@media(max-width: 767.99px) {
+  .banner {
+    padding-bottom: 60px;
+  }
+
+  .banner__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .banner__content {
+    background-position: top center;
+    height: 402px;
+  }
+}
+
+@media(max-width: 1199.99px) {}

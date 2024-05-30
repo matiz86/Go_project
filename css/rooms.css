@@ -40,3 +40,55 @@
   text-align: center;
   color: #fff;
 }
+
+@media(max-width: 1199.99px) {
+
+  .rooms {
+    padding-bottom: 70px;
+  }
+
+  .rooms__title {
+    font-size: 30px;
+    line-height: 1.33333;
+    margin-bottom: 36px;
+  }
+
+  .rooms__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+  }
+
+  .rooms__item {
+    position: relative;
+  }
+}
+
+@media(max-width: 767.99px) {
+
+  .rooms {
+    padding-bottom: 60px;
+  }
+
+  .rooms__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .rooms__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 8px;
+
+  }
+
+  .rooms__item {
+    position: relative;
+  }
+
+  .rooms__link {
+    font-size: 20px;
+  }
+}

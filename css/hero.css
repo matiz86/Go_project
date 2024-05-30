@@ -27,15 +27,6 @@
   z-index: 2;
 }
 
-.hero__title-vibes {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 0.88889;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-
 .hero__desc {
   padding-left: 100px;
   font-weight: 400;
@@ -141,6 +132,10 @@
   outline: 2px solid var(--electric-violet);
 }
 
+
+
+
+
 @media(max-width: 1199.99px) {
 
   .hero {
@@ -175,10 +170,6 @@
     line-height: 1.36364;
     margin-bottom: 30px;
   }
-
-  /* .hero-content__item{
-      margin-bottom: 80px;
-    } */
 
   .hero-content__item--left {
     flex-basis: 168px;
@@ -229,107 +220,4 @@
     outline-offset: 0;
     outline: 2px solid var(--electric-violet);
   }
-}
-
-/* Vibes */
-
-.banner {
-  padding-bottom: 100px;
-}
-
-.banner__content-vibes {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../img/vibes-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 750px;
-}
-
-.banner__title {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 0.88889;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-
-/* Starwars */
-
-.banner {
-  padding-bottom: 100px;
-}
-
-.banner__content-starwars {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../img/starwars-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 750px;
-}
-
-.banner__title {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 0.88889;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-
-/* Neon */
-
-.banner {
-  padding-bottom: 100px;
-}
-
-.banner__content-neon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../img/neon-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 750px;
-}
-
-.banner__title {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 0.88889;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
-}
-
-/* wildwest */
-.banner {
-  padding-bottom: 100px;
-}
-
-.banner__content-wildwest {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../img/wildwest-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 750px;
-}
-
-.banner__title {
-  font-weight: 700;
-  font-size: 90px;
-  line-height: 0.88889;
-  text-transform: uppercase;
-  text-align: center;
-  color: #fff;
 }

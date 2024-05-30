@@ -11,3 +11,27 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+
+@media(max-width: 1199.99px) {
+  .container__descr {
+    padding-bottom: 70px;
+  }
+
+  .pages__descr {
+    font-size: 20px;
+    max-width: 800px;
+  }
+
+}
+
+@media(max-width: 767.99px) {
+  .container__descr {
+    padding-bottom: 60px;
+  }
+
+  .pages__descr {
+    font-size: 16px;
+    max-width: 688px;
+  }
+
+}
