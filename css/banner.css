@@ -65,4 +65,17 @@
   }
 }
 
-@media(max-width: 1199.99px) {}
+@media(max-width: 479.99px) {
+  .banner {
+    padding-bottom: 30px;
+  }
+
+  .banner__title {
+    font-size: 30px;
+  }
+
+  .banner__content {
+    background-position: top center;
+    height: 168px;
+  }
+}

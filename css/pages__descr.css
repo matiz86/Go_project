@@ -35,3 +35,14 @@
   }
 
 }
+
+@media(max-width: 479.99px) {
+  .container__descr {
+    padding-bottom: 30px;
+  }
+
+  .pages__descr {
+    font-size: 16px;
+    max-width: 280px;
+  }
+}

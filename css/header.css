@@ -207,3 +207,81 @@
     line-height: 1.75;
   }
 }
+
+@media(max-width: 479.99px) {
+
+  .container {
+    max-width: 280px;
+  }
+
+  .header-pages {
+    margin-bottom: 15px;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .burger {
+    position: relative;
+    width: 54px;
+    height: 30px;
+    display: block;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .burger__line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: #6c0287;
+    transform: translateY(-50%);
+  }
+
+  .burger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background: #6c0287;
+  }
+
+  .burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 31px;
+    height: 5px;
+    border-radius: 2px;
+    background: #6c0287;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header__link {
+    font-size: 12px;
+    line-height: 1.33333;
+
+    svg {
+      width: 17px;
+      height: 8px;
+    }
+  }
+
+  .header__btn {
+    display: none;
+  }
+}

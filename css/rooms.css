@@ -92,3 +92,31 @@
     font-size: 20px;
   }
 }
+
+@media(max-width: 479.99px) {
+
+  .rooms {
+    padding-bottom: 30px;
+  }
+
+  .rooms__title {
+    font-size: 14px;
+    line-height: 1.28571;
+    margin-bottom: 15px;
+  }
+
+  .rooms__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  .rooms__item {
+    position: relative;
+  }
+
+  .rooms__link {
+    font-size: 20px;
+  }
+}
