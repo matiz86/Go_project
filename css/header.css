@@ -99,7 +99,8 @@
 @media(max-width: 1199.99px) {
 
   .header__inner {
-    margin-bottom: 50px;
+    padding-top: 30px;
+    margin-bottom: 30px;
   }
 
   .logo {
@@ -114,11 +115,6 @@
   .nav__link {
     font-size: 18px;
     line-height: 1.22222;
-
-  }
-
-  .nav__link:hover {
-    color: var(--electric-violet);
   }
 
   .header__btn {
@@ -126,33 +122,17 @@
     line-height: 1.33333;
     padding: 11px 26px;
   }
-
-  .header__btn:hover {
-    background-color: var(--purple);
-    border: 3px solid var(--purple);
-  }
-
-  .header__btn:focus {
-    background-color: var(--purple);
-    outline: none;
-    border: 3px solid transparent;
-  }
-
-  .header__btn:active {
-    background-color: #640aa3;
-    border: 3px solid transparent;
-    outline: 1px solid var(--dark-color);
-  }
 }
 
-@media(max-width: 769.99px) {
+@media(max-width: 767.99px) {
 
   .container {
     max-width: 688px;
   }
 
   .header__inner {
-    margin-bottom: 40px;
+    padding-top: 32px;
+    margin-bottom: 30px;
   }
 
   .burger {
@@ -213,15 +193,12 @@
   .container {
     max-width: 280px;
   }
-
   .header-pages {
     margin-bottom: 15px;
   }
 
   .header__inner {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .burger {
