@@ -104,3 +104,33 @@
   color: var(--main-color);
   background-color: var(--jagger);
 }
+
+@media(max-width: 1199.99px) {
+  .questions {
+    padding-bottom: 58px;
+  }
+
+  .container {
+    max-width: 904px;
+  }
+
+  .questions__title {
+    font-size: 30px;
+    line-height: 1.33333;
+    margin-bottom: 26px;
+  }
+
+  .questions__item:nth-child(even) {
+    background-color: #fff;
+    color: var(--dark-color);
+  }
+
+  .questions__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .questions__btn--white {
+    stroke: var(--jagger);
+  }
+
+}
