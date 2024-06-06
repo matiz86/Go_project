@@ -1,17 +1,9 @@
-.header {
-  padding-top: 30px;
-
-}
-
-.header__inner {
-  display: flex;
-}
-
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 60px;
+  padding-top: 30px;
+  margin-bottom: 50px;
 }
 
 .nav__list {
@@ -97,6 +89,10 @@
 }
 
 @media(max-width: 1199.99px) {
+
+  .container {
+    max-width: 904px;
+  }
 
   .header__inner {
     padding-top: 30px;
@@ -193,12 +189,14 @@
   .container {
     max-width: 280px;
   }
+
   .header-pages {
     margin-bottom: 15px;
   }
 
   .header__inner {
-    margin-bottom: 25px;
+    padding-top: 20px;
+    margin-bottom: 20px;
   }
 
   .burger {

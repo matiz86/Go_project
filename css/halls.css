@@ -1,5 +1,4 @@
 .halls {
-  padding-top: 50px;
   padding-bottom: 100px;
 }
 
@@ -18,10 +17,6 @@
   gap: 20px;
 }
 
-/* .halls__list-item:not(:last-child) {
-  margin-bottom: 60px;
-} */
-
 .halls__item {
   position: relative;
 
@@ -29,10 +24,7 @@
 
 .halls__link {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,14 +36,15 @@
 }
 
 @media(max-width: 1199.99px) {
+
+  .halls {
+    padding-bottom: 70px;
+  }
+
   .container {
     max-width: 904px;
   }
 
-  .halls {
-    padding-top: 35px;
-    padding-bottom: 70px;
-  }
 
   .halls__title {
     font-size: 30px;
@@ -67,14 +60,15 @@
 
 @media(max-width: 767.99px) {
 
-  .container {
-    max-width: 688px;
+  .halls {
+    padding-bottom: 62px;
   }
 
-  .halls {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  .container {
+    max-width: 688px;
+    padding: 0 40px;
   }
+
 
   .halls__title {
     font-size: 24px;
@@ -85,11 +79,6 @@
     gap: 18px 20px;
   }
 
-  .halls__item {
-    position: relative;
-
-  }
-
   .halls__link {
     font-size: 40px;
     line-height: 1.25;
@@ -98,14 +87,15 @@
 
 @media(max-width: 479.99px) {
 
-  .container {
-    max-width: 280px;
+  .halls {
+    padding-bottom: 30px;
   }
 
-  .halls {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .container {
+    max-width: 280px;
+    padding: 0 20px;
   }
+
 
   .halls__title {
     font-size: 14px;
@@ -117,15 +107,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-
-  /* .halls__list-item:not(:last-child) {
-    margin-bottom: 60px;
-  } */
-
-  .halls__item {
-    position: relative;
-
   }
 
   .halls__link {
