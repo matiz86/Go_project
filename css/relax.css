@@ -123,10 +123,10 @@
     padding-top: 23px;
     padding-bottom: 19px;
   }
-
+/* 
   .container {
     max-width: 280px;
-  }
+  } */
 
   .relax-container {
     height: 296px;
@@ -141,7 +141,7 @@
   .relax__list {
     display: grid;
     grid-template-columns: 135px auto;
-    gap: 20px;
+    gap: 10px;
   }
 
   .relax__item {

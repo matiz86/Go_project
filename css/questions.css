@@ -221,7 +221,7 @@
   }
 
   .container {
-    max-width: 688px;
+    /* max-width: 688px; */
     padding: 0 40px;
   }
 
@@ -248,20 +248,18 @@
   }
 
   .container {
-    max-width: 280px;
+    /* max-width: 280px; */
     padding: 0 20px;
   }
 
   .questions__title {
-    font-size: 24px;
-    line-height: 1.08333;
+    font-size: 14px;
+      line-height: 1.28571;
     margin-bottom: 30px
   }
-  
-
   .question__text {
-    font-size: 18px;
-    line-height: 1.33333;
+    font-size: 12px;
+      line-height: 1.33333;
   }
 
   .questions__button {
