@@ -1,6 +1,6 @@
 .about {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 45px;
 }
 
 .about__title {
@@ -75,7 +75,6 @@
 }
 
 .about__citate-boss {
-  /* max-width: 389px; */
   display: flex;
   justify-content: end;
   align-items: center;
@@ -196,12 +195,11 @@
   }
 
   .about__box {
-    display: flex;
-    gap: 28px;
-  }
-
-  .about__content {
-    max-width: 278px;
+    display: grid;
+    grid-template-columns: 382px auto;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 28px;
+    row-gap: 30px;
   }
 
   .about__img {
@@ -217,8 +215,10 @@
   }
 
   .about__citate {
-    max-width: 444px;
-    padding-left: 25px;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
   }
 
   .about__citate-desc {
@@ -264,13 +264,17 @@
 
 
 @media(max-width: 479.99px) {
-  .container {
-    max-width: 280px;
-  }
 
   .about {
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
+
+  .container {
+    max-width: 280px;
+    padding: 0 20px;
+  }
+
 
   .about__title {
     font-size: 14px;
@@ -279,69 +283,65 @@
   }
 
   .about__box {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 280px ;
     gap: 15px;
   }
 
   .about__content {
-    max-width: 278px;
+    order: -1;
   }
 
   .about__img {
-    max-width: 382px;
+    max-width: 280px;
     height: 100%;
     object-fit: cover;
   }
 
   .about__desc {
-  font-size: 12px;
+    font-size: 12px;
     line-height: 1.33333;
   }
 
   .about__citate {
-    max-width: 444px;
-    padding-left: 25px;
+    padding-left: 15px;
   }
 
   .about__citate-desc {
-    font-size: 30px;
-    line-height: 1.2;
-    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.44444;
+    margin-bottom: 9px;
   }
 
   .about__citate-desc:before {
+    display: inline-block;
     position: absolute;
     content: "\201c";
-    left: 0px;
-    top: -9px;
-    width: 15px;
-    height: 36px;
+    left: -4px;
+    top: -20px;
+    width: 11px;
+    height: 50px;
   }
 
   .about__citate-desc:after {
-    right: 170px;
-    top: 67px;
-    width: 15px;
-    height: 36px;
+    right: 102px;
+    top: 34px;
+    width: 11px;
+    height: 50px;
   }
 
   .about__citate-boss {
-    gap: 35px;
+    gap: 11px;
   }
 
   .about__citate-boss-img {
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
+    width: 56px;
+    height: 56px;
   }
 
   .desc {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.44444;
-    max-width: 225px;
-    text-transform: none;
+    font-size: 12px;
+    line-height: 1.33333;
   }
 
 }

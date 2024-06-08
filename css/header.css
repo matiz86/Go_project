@@ -1,9 +1,12 @@
+.header{
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
-  margin-bottom: 50px;
 }
 
 .nav__list {
@@ -94,9 +97,9 @@
     max-width: 904px;
   }
 
-  .header__inner {
+  .header{
     padding-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .logo {
@@ -126,9 +129,9 @@
     max-width: 688px;
   }
 
-  .header__inner {
+  .header {
     padding-top: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .burger {
@@ -194,9 +197,9 @@
     margin-bottom: 15px;
   }
 
-  .header__inner {
+  .header {
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .burger {

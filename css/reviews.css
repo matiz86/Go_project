@@ -28,10 +28,14 @@
 .reviews__info {
   position: relative;
   width: 280px;
-  height: 280px;
 }
 
-.reviews__info:before {
+.gradient {
+  position: relative;
+  width: 280px;
+}
+
+.gradient:before {
   position: absolute;
   content: '';
   display: block;
@@ -71,7 +75,8 @@
 
 @media(max-width: 1199.99px) {
   .reviews {
-    padding-bottom: 70px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   .reviews__title {
@@ -87,16 +92,20 @@
   .reviews__item {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 38px;
   }
 
   .reviews__info {
     position: relative;
-    width: 172px;
-    height: 172px;
+    width: 224px;
   }
 
-  .reviews__info:before {
+  .gradient {
+    position: relative;
+    width: 224px;
+  }
+
+  .gradient:before {
     position: absolute;
     content: '';
     display: block;
@@ -129,7 +138,8 @@
 
 @media(max-width: 767.99px) {
   .reviews {
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .reviews__title {
@@ -145,16 +155,20 @@
   .reviews__item {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
   }
 
   .reviews__info {
     position: relative;
     width: 153px;
-    height: 153px;
   }
 
-  .reviews__info:before {
+  .gradient {
+    position: relative;
+    width: 153px;
+  }
+
+  .gradient:before {
     position: absolute;
     content: '';
     display: block;
@@ -185,7 +199,12 @@
 
 @media(max-width: 479.99px) {
   .reviews {
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .container{
+    max-width: 280px;
+    padding: 0 20px;
   }
 
   .reviews__title {
@@ -205,17 +224,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
   }
 
   .reviews__info {
-    position: relative;
-    width: 86px;
-    height: 86px;
-    margin-bottom: 9px;
+    width: 156px;
   }
 
-  .reviews__info:before {
+  .gradient {
+    position: relative;
+    width: 156px;
+  }
+
+  .gradient:before {
     position: absolute;
     content: '';
     display: block;
@@ -226,10 +247,9 @@
     opacity: 0.5;
     z-index: 20;
   }
-
-  /* .reviews__img {
-    margin-bottom: 9px;
-  } */
+    .reviews__img{
+      margin-bottom: 9px;
+    }
 
   .reviews__name-title {
     font-size: 14px;

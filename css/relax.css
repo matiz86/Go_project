@@ -1,5 +1,10 @@
 .relax {
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.relax-container {
+  height: 708px;
 }
 
 .relax__title {
@@ -38,21 +43,18 @@
 
 @media(max-width: 1199.99px) {
   .relax {
-    padding-bottom: 77px;
+    padding-top: 38px;
+    padding-bottom: 38px;
   }
 
-  .container {
-    max-width: 904px;
+  .relax-container {
+    height: 542px;
   }
 
   .relax__title {
     font-size: 30px;
     line-height: 1.33333;
     margin-bottom: 36px;
-  }
-
-  .relax__box {
-    height: 428px;
   }
 
   .relax__list {
@@ -64,10 +66,11 @@
   .relax__item {
     flex-basis: 287px;
   }
-.relax__item:nth-child(2),
-.relax__item:nth-child(5) {
-  transform: translateY(53px);
-}
+
+  .relax__item:nth-child(2),
+  .relax__item:nth-child(5) {
+    transform: translateY(53px);
+  }
 
   .relax__item:hover {
     transform: scale(1);
@@ -80,12 +83,12 @@
 
 @media(max-width: 767.99px) {
   .relax {
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 
-  .container {
-    max-width: 687px;
-    padding: 0 40px;
+  .relax-container {
+    height: 742px;
   }
 
   .relax__title {
@@ -117,14 +120,17 @@
 
 @media(max-width: 479.99px) {
   .relax {
-    padding-bottom: 38px;
+    padding-top: 23px;
+    padding-bottom: 19px;
   }
 
   .container {
     max-width: 280px;
-    padding: 0 20px;
   }
 
+  .relax-container {
+    height: 296px;
+  }
 
   .relax__title {
     font-size: 14px;

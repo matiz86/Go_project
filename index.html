@@ -47,6 +47,7 @@
   </header>
 
   <main>
+
     <section class="hero">
       <div class="container">
         <div class="hero__banner">
@@ -65,7 +66,7 @@
             </li>
           </ul>
           <a href="#booking" class="hero__btn">Забронировать</a>
-          <a class="hero__btn-link" href="#contacts">
+          <a class="hero__btn-link" href="#relax">
             <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="48.5" cy="48.5" r="48" stroke="white" />
               <rect x="34.4255" y="43.9163" width="1.82001" height="20.0201"
@@ -78,8 +79,8 @@
       </div>
     </section>
 
-    <section class="relax">
-      <div class="container">
+    <section class="relax" id="relax">
+      <div class="container relax-container">
         <h2 class="relax__title">У&nbsp;нас есть все для классного<br>
           отдыха с &nbsp;друзьями!</h2>
         <div class="relax__box">
@@ -281,7 +282,7 @@
       </div>
     </section>
 
-    <!-- <section class="about" id="about">
+    <section class="about" id="about">
       <div class="container">
         <h2 class="about__title">О нас</h2>
         <div class="about__box">
@@ -315,7 +316,11 @@
         <ul class="reviews__list">
           <li class="reviews__item">
             <figure class="reviews__info">
-              <img class="reviews__img" src="img/person.jpg" alt="Брюс Уиллис" width="280" height="280" loading="lazy">
+              <div class="gradient">
+                <img class="reviews__img" src="img/person.jpg" alt="Брюс Уиллис" width="280" height="280"
+                  loading="lazy">
+              </div>
+
               <figcaption class="reviews__name-title">Макс Самойлов</figcaption>
             </figure>
             <p class="reviews__text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это
@@ -325,8 +330,11 @@
           </li>
           <li class="reviews__item">
             <figure class="reviews__info">
-              <img class="reviews__img" src="img/oksana.jpg" alt="Железный человек" width="280" height="280"
-                loading="lazy">
+              <div class="gradient">
+                <img class="reviews__img" src="img/oksana.jpg" alt="Железный человек" width="280" height="280"
+                  loading="lazy">
+              </div>
+
               <figcaption class="reviews__name-title">Оксана Григорьева</figcaption>
             </figure>
             <p class="reviews__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился
@@ -336,8 +344,11 @@
           </li>
           <li class="reviews__item">
             <figure class="reviews__info">
-              <img class="reviews__img" src="img/nikita.jpg" alt="Джейсон Стейтем" width="280" height="280"
-                loading="lazy">
+              <div class="gradient">
+                <img class="reviews__img" src="img/nikita.jpg" alt="Джейсон Стейтем" width="280" height="280"
+                  loading="lazy">
+              </div>
+
               <figcaption class="reviews__name-title">Никита Ященко</figcaption>
             </figure>
             <p class="reviews__text">Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в
@@ -347,49 +358,53 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="questions" id="questions">
+    <section class="questions" id="questions">
       <div class="container">
         <h2 class="questions__title">Частые вопросы</h2>
         <ul class="questions__list">
-          <li class="questions__item">Можно ли забронировать комнату онлайн?
+          <li class="questions__item">
+            <p class="question__text question__text--black">Можно ли забронировать комнату онлайн?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--violet" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="none" d="M22.8305 14H23.5085V34H22.8305V14Z" />
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" />
-                <circle cx="23" cy="23" r="22" stroke="#6C0287" stroke-width="2" />
+                <circle cx="23" cy="23" r="22" stroke-width="2" />
               </svg>
             </button>
           </li>
-          <li class="questions__item">Могут ли мне вернуть деньги за бронь?
+          <li class="questions__item">
+            <p class="question__text">Могут ли мне вернуть деньги за бронь?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--white" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="none" d="M22.8305 14H23.5085V34H22.8305V14Z" />
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" />
-                <circle cx="23" cy="23" r="22" stroke="#fff" stroke-width="2" />
+                <circle cx="23" cy="23" r="22" stroke-width="2" />
               </svg>
             </button>
           </li>
-          <li class="questions__item">Какая комната самая популярная?
+          <li class="questions__item">
+            <p class="question__text question__text--black">Какая комната самая популярная?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--violet" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="none" d="M22.8305 14H23.5085V34H22.8305V14Z" />
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" />
-                <circle cx="23" cy="23" r="22" stroke="#6C0287" stroke-width="2" />
+                <circle cx="23" cy="23" r="22" stroke-width="2" />
               </svg>
             </button>
           </li>
-          <li class="questions__item">Как получить VIP карту?
+          <li class="questions__item">
+            <p class="question__text">Как получить VIP карту?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--white" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path class="none" d="M22.8305 14H23.5085V34H22.8305V14Z" />
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" />
-                <circle cx="23" cy="23" r="22" stroke="#fff" stroke-width="2" />
+                <circle cx="23" cy="23" r="22" stroke-width="2" />
               </svg>
             </button>
           </li>
@@ -417,7 +432,7 @@
                       d="M23.329 21.5433L18.6083 28.9238C17.3864 30.8289 14.6068 30.8226 13.3907 28.9256L8.66238 21.5453C4.50213 22.5071 1.9375 24.2692 1.9375 26.3749C1.9375 30.0288 9.183 31.9999 16 31.9999C22.817 31.9999 30.0625 30.0288 30.0625 26.3749C30.0625 24.2677 27.4943 22.5047 23.329 21.5433Z"
                       fill="#CD06FF" />
                   </svg>
-                  г. Москва <br>ул. Усачёва, 29 к3
+                  г. Москва ул. Усачёва, 29 к3
                 </p>
               </li>
               <li class="contacts__info-item">
@@ -508,11 +523,11 @@
         </div>
       </div>
     </section>
-  </footer> -->
+  </footer>
 
-    <script>
-      document.addEventListener('click', event => { if (event.target.matches('button')) { event.target.focus() } })
-    </script>
+  <script>
+    document.addEventListener('click', event => { if (event.target.matches('button')) { event.target.focus() } })
+  </script>
 
 
 </body>
