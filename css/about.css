@@ -18,7 +18,7 @@
 }
 
 .about__content {
-  max-width: 500px;
+  /* max-width: 500px; */
 }
 
 .about__desc {
@@ -31,7 +31,7 @@
 
 .about__citate {
   position: relative;
-  max-width: 500px;
+  /* max-width: 500px; */
   margin: 0;
   padding-left: 31px;
 }
@@ -116,7 +116,7 @@
   }
 
   .about__content {
-    max-width: 444px;
+    /* max-width: 444px; */
   }
 
   .about__img {
@@ -132,7 +132,7 @@
   }
 
   .about__citate {
-    max-width: 444px;
+    /* max-width: 444px; */
     padding-left: 25px;
   }
 
@@ -185,7 +185,8 @@
   }
 
   .about {
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .about__title {
@@ -222,8 +223,8 @@
   }
 
   .about__citate-desc {
-    font-size: 30px;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 1.125;
     margin-bottom: 16px;
   }
 
@@ -237,14 +238,14 @@
   }
 
   .about__citate-desc:after {
-    right: 170px;
-    top: 67px;
+    right: 117px;
+    top: 33px;
     width: 15px;
     height: 36px;
   }
 
   .about__citate-boss {
-    gap: 35px;
+    gap: 25px;
   }
 
   .about__citate-boss-img {
@@ -254,11 +255,8 @@
   }
 
   .desc {
-    font-weight: 400;
     font-size: 18px;
     line-height: 1.44444;
-    max-width: 225px;
-    text-transform: none;
   }
 }
 
@@ -283,8 +281,8 @@
   }
 
   .about__box {
-    display: grid;
-    grid-template-columns: 280px ;
+    display: flex;
+    flex-direction: column;
     gap: 15px;
   }
 
