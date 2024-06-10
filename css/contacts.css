@@ -233,11 +233,8 @@
   }
 
   .contacts__info-address {
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 300px;
-    row-gap: 9px;
     margin-bottom: 27px;
+    padding-left: 99px;
 
     svg {
       width: 26px;
@@ -246,7 +243,8 @@
   }
 
   .contacts__info-phone {
-    margin-bottom: 7px;
+    margin-bottom: 27px;
+    padding-left: 53px;
 
     svg {
       width: 26px;
@@ -257,6 +255,7 @@
 
   .contacts__info-mail {
     margin-bottom: 27px;
+    padding-left: 19px;
 
     svg {
       width: 26px;
@@ -311,14 +310,11 @@
   }
 
   .contacts__info-address {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 300px;
-    align-items: flex-start;
-    justify-content: center;
     font-size: 14px;
+    align-items: flex-start;
     line-height: 1.28571;
     margin-bottom: 10px;
+    padding-left: 80px;
 
     svg {
       width: 20px;
@@ -330,6 +326,7 @@
     font-size: 14px;
     line-height: 1.28571;
     margin-bottom: 10px;
+    padding-left: 59px;
 
     svg {
       width: 20px;
@@ -342,6 +339,7 @@
     font-size: 14px;
     line-height: 1.28571;
     margin-bottom: 10px;
+    padding-left: 20px;
 
     svg {
       width: 20px;
