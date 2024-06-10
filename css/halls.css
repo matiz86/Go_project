@@ -107,6 +107,7 @@
   }
 
   .halls__list {
+    max-width: 280px;
     display: flex;
     flex-direction: column;
     gap: 10px;
