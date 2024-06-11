@@ -143,6 +143,20 @@
 .contacts__developer-link:hover {
   color: var(--electric-violet);
 }
+.address {
+  display: grid;
+  grid-template-columns: max-content auto;
+  margin-bottom: 39px;
+}
+.contact__map-img {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.address__text {
+  padding-left: 32px;
+  font-size: 24px;
+  font-weight: 700;
+}
 
 @media(max-width: 1199.99px) {
 
@@ -208,6 +222,9 @@
   .contacts__copyright {
     padding-bottom: 20px;
   }
+.address__text {
+  padding-left: 14px;
+}
 }
 
 @media(max-width: 767.99px) {
@@ -232,19 +249,40 @@
     align-items: center;
   }
 
-  .contacts__info-address {
+
+  .address__text {
+    position: relative;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16667;
+    text-align: center;
+    color: #fff;
+  }
+
+
+
+  /* .contacts__info-address {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 27px;
-    padding-left: 99px;
+    align-items: center;
 
     svg {
       width: 26px;
       height: 26px;
+    
     }
-  }
+
+    span {
+      width: 100%;
+      text-align: center;
+    }
+  } */
+
 
   .contacts__info-phone {
     margin-bottom: 27px;
-    padding-left: 53px;
 
     svg {
       width: 26px;
@@ -255,7 +293,6 @@
 
   .contacts__info-mail {
     margin-bottom: 27px;
-    padding-left: 19px;
 
     svg {
       width: 26px;
@@ -285,6 +322,25 @@
   .contacts__copyright {
     padding-bottom: 18px;
   }
+.address__text:last-of-type {
+  grid-row: 2/2;
+  grid-column: 1/3;
+}
+.address__text:first-of-type {
+  justify-self: flex-start;
+  padding-left: 10px;
+}
+
+.contact__map-img {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.address__text {
+  padding-left: 0;
+}
+.contact__map-img {
+  justify-self: flex-end;
+}
 }
 
 @media(max-width: 479.99px) {
@@ -314,7 +370,6 @@
     align-items: flex-start;
     line-height: 1.28571;
     margin-bottom: 10px;
-    padding-left: 80px;
 
     svg {
       width: 20px;
@@ -326,7 +381,6 @@
     font-size: 14px;
     line-height: 1.28571;
     margin-bottom: 10px;
-    padding-left: 59px;
 
     svg {
       width: 20px;
@@ -339,7 +393,6 @@
     font-size: 14px;
     line-height: 1.28571;
     margin-bottom: 10px;
-    padding-left: 20px;
 
     svg {
       width: 20px;
@@ -388,4 +441,16 @@
     font-size: 12px;
     line-height: 1.33333;
   }
+  .address__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .contact__map-img {
+    width: 20px;
+    height: 20px;
+  }
+  .address {
+    margin-bottom: 10px;
+  }
+
 }

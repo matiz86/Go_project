@@ -678,6 +678,10 @@ input[type="number"]:focus {
     left: 75%;
   }
 
+.booking__field-reserve {
+  justify-content: space-between;
+}
+
   .reserve-block {
     flex-wrap: wrap;
     row-gap: 42px;
@@ -867,6 +871,8 @@ input[type="number"]:focus {
     line-height: 1.28571;
     margin-bottom: 25px;
   }
+
+  
 
   .reserve-block {
     flex-wrap: wrap;
