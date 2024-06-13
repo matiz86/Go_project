@@ -53,22 +53,25 @@
         <div class="hero__banner">
           <h1 class="hero__title">GAME OVER</h1>
           <p class="hero__desc">Новый формат игр и отдыха</p>
-          <ul class="hero-content__list">
-            <li class="hero-content__item hero-content__item--left">
-              <p class="hero-content__title-left">4</p>
-              <p class="hero-content__text">Тематических
-                зала</p>
-            </li>
-            <li class="hero-content__item hero-content__item--right">
-              <p class="hero-content__title-right">new</p>
-              <p class="hero-content__text">Новейшая
-                аппаратура</p>
-            </li>
-          </ul>
+          <div class="hero__content">
+            <ul class="hero__content-list">
+              <li class="hero__content-item hero__content-item--left">
+                <p class="hero__content-title-left">4</p>
+                <p class="hero__content-text">Тематических
+                  зала</p>
+              </li>
+              <li class="hero__content-item hero__content-item--right">
+                <p class="hero__content-title-right">new</p>
+                <p class="hero__content-text">Новейшая
+                  аппаратура</p>
+              </li>
+            </ul>
+          </div>
+
           <a href="#booking" class="hero__btn">Забронировать</a>
           <a class="hero__btn-link" href="#relax">
-            <svg width="97" height="97" viewBox="0 0 97 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="48.5" cy="48.5" r="48" stroke="white" />
+            <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="48.5" cy="48.5" r="48" />
               <rect x="34.4255" y="43.9163" width="1.82001" height="20.0201"
                 transform="rotate(-44.9975 34.4255 43.9163)" />
               <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201"
@@ -249,7 +252,7 @@
               <div class="row-group">
                 <input type="text" placeholder="Дата" class="reserve-block__input" required name="date"
                   onfocus="(this.type='date')" onblur="(this.type='text')">
-                <input type="text" placeholder="Время" class="reserve-block__input reserve-block--input--time" required
+                <input type="text" placeholder="Время" class="reserve-block__input reserve-block__input--time" required
                   name="time" onfocus="(this.type='time')" onblur="(this.type='text')">
               </div>
               <input type="text" placeholder="Сколько человек" class="reserve-block__input reserve-block__input--full"
@@ -272,7 +275,7 @@
                 <input class="group-input" type="text" id="phone" required name="phone">
               </div>
               <div class="group-third">
-                <label for="t,ail" class="group-email">E-mail</label>
+                <label for="email" class="group-email">E-mail</label>
                 <input class="group-input" type="text" id="email" required name="mail">
               </div>
             </div>
@@ -365,7 +368,7 @@
         <h2 class="questions__title">Частые вопросы</h2>
         <ul class="questions__list">
           <li class="questions__item">
-            <p class="question__text question__text--black">Можно ли забронировать комнату онлайн?</p>
+            <p class="questions__text questions__text--black">Можно ли забронировать комнату онлайн?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--violet" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -376,7 +379,7 @@
             </button>
           </li>
           <li class="questions__item">
-            <p class="question__text">Могут ли мне вернуть деньги за бронь?</p>
+            <p class="questions__text">Могут ли мне вернуть деньги за бронь?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--white" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +390,7 @@
             </button>
           </li>
           <li class="questions__item">
-            <p class="question__text question__text--black">Какая комната самая популярная?</p>
+            <p class="questions__text questions__text--black">Какая комната самая популярная?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--violet" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -398,7 +401,7 @@
             </button>
           </li>
           <li class="questions__item">
-            <p class="question__text">Как получить VIP карту?</p>
+            <p class="questions__text">Как получить VIP карту?</p>
             <button class="questions__button" type="button">
               <svg class="questions__btn--white" width="46" height="46" viewBox="0 0 46 46" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
@@ -422,8 +425,9 @@
         <div class="contacts__box">
           <address class="contacts__info">
             <ul class="contacts__info-list">
-              <li class="footer-listitem address ">
-                <svg class="contact__map-img" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <li class="contacts__info-item address ">
+                <svg class="contacts__map-img" width="32" height="32" viewBox="0 0 32 32" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16 0C10.3772 0 5.6875 4.52938 5.6875 10.3125C5.6875 12.5126 6.34862 14.4745 7.61744 16.3129L15.2108 28.1616C15.5792 28.7376 16.4216 28.7365 16.7892 28.1616L24.4155 16.2726C25.657 14.5175 26.3125 12.4567 26.3125 10.3125C26.3125 4.62619 21.6863 0 16 0ZM16 15C13.4154 15 11.3125 12.8971 11.3125 10.3125C11.3125 7.72794 13.4154 5.625 16 5.625C18.5846 5.625 20.6875 7.72794 20.6875 10.3125C20.6875 12.8971 18.5846 15 16 15Z"
                     fill="#CD06FF" />
@@ -434,20 +438,7 @@
                 <span class="address__text">г.Москва</span>
                 <span class="address__text">ул. Усачёва, 29 к3</span>
               </li>
-              <!-- <li class="contacts__info-item">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16 0C10.3772 0 5.6875 4.52938 5.6875 10.3125C5.6875 12.5126 6.34862 14.4745 7.61744 16.3129L15.2108 28.1616C15.5792 28.7376 16.4216 28.7365 16.7892 28.1616L24.4155 16.2726C25.657 14.5175 26.3125 12.4567 26.3125 10.3125C26.3125 4.62619 21.6863 0 16 0ZM16 15C13.4154 15 11.3125 12.8971 11.3125 10.3125C11.3125 7.72794 13.4154 5.625 16 5.625C18.5846 5.625 20.6875 7.72794 20.6875 10.3125C20.6875 12.8971 18.5846 15 16 15Z"
-                    fill="#CD06FF" />
-                  <path
-                    d="M23.329 21.5433L18.6083 28.9238C17.3864 30.8289 14.6068 30.8226 13.3907 28.9256L8.66238 21.5453C4.50213 22.5071 1.9375 24.2692 1.9375 26.3749C1.9375 30.0288 9.183 31.9999 16 31.9999C22.817 31.9999 30.0625 30.0288 30.0625 26.3749C30.0625 24.2677 27.4943 22.5047 23.329 21.5433Z"
-                    fill="#CD06FF" />
-                </svg>
-                <p class="contacts__info-address">
-                  г. Москва
-                  <span> ул.Усачёва, 29&nbsp;к3</span>
-                </p>
-              </li> -->
+             
               <li class="contacts__info-item">
                 <a class="contacts__info-phone" href="tel:89509302893">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -476,9 +467,9 @@
 
 
 
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link" href="#">
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -487,8 +478,8 @@
 
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -496,8 +487,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -505,8 +496,8 @@
                   </svg>
                 </a>
               </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
+              <li class="contacts__item">
+                <a class="contacts__link" href="#">
                   <svg width="50" height="50" viewBox="0 0 50 50" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -526,7 +517,7 @@
           <p class="contacts__copyright-text">© Game Over, 2022</p>
           <ul class="contacts__developer-list">
             <li class="contacts__developer-item">
-              <p class="contscts__developer-text">Design by Anastasia Ilina</p>
+              <p class="contacts__developer-text">Design by Anastasia Ilina</p>
             </li>
             <li class="contacts__developer-item">
               <a class="contacts__developer-link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>

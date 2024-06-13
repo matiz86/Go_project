@@ -125,6 +125,7 @@
   color: var(--main-color);
   position: relative;
   padding-left: 37px;
+  min-height: 27px;
 }
 
 .booking__radio-console {
@@ -148,7 +149,6 @@
   width: 27px;
   height: 27px;
   background-color: var(--main-color);
-  border: 3px solid #640AA3;
   border-radius: 50%;
 }
 
@@ -161,8 +161,7 @@
   width: 27px;
   height: 27px;
   opacity: 0;
-  background-color: #640AA3;
-  border: 2px solid var(--dark-color);
+  background-color: var(--main-color);
   border-radius: 50%;
 }
 
@@ -175,11 +174,14 @@
 }
 
 .booking__radio-console:focus {
-  outline-offset: 1px;
-  outline-width: 1px;
-  outline-color: #CD06FF;
-  width: 27px;
-  height: 27px;
+  outline: none;
+}
+
+.booking__radio-console:focus-visible {
+  border: 1px solid #cd06ff;
+  outline-offset: 3px;
+  width: 33px;
+  height: 33px;
 }
 
 .booking__field-table {
@@ -212,8 +214,8 @@
 }
 
 .booking__checkbox-table {
-  width: 25px;
-  height: 25px;
+  width: 27px;
+  height: 27px;
   position: absolute;
   top: 0;
   left: 0;
@@ -231,7 +233,6 @@
   width: 25px;
   height: 25px;
   background-color: var(--main-color);
-  border: 3px solid #640AA3;
 }
 
 .booking__checkbox-table:checked::before {
@@ -247,16 +248,15 @@
   width: 25px;
   height: 25px;
   opacity: 0;
-  background-color: #640AA3;
-  border: 2px solid var(--dark-color);
+  background-color: var(--main-color)
 }
 
 .booking__checkbox-table:checked::after {
   opacity: 1;
 }
 
-.booking__checkbox-table:focus {
-  outline-offset: 1px;
+.booking__checkbox-table:focus-visible {
+  outline-offset: 3px;
   outline-width: 1px;
   outline-color: #CD06FF;
   width: 25px;
@@ -313,7 +313,6 @@
   width: 25px;
   height: 25px;
   background-color: var(--main-color);
-  border: 3px solid #640AA3;
 }
 
 .booking__checkbox-karaoke::after {
@@ -325,8 +324,7 @@
   width: 25px;
   height: 25px;
   opacity: 0;
-  background-color: #640AA3;
-  border: 2px solid var(--dark-color);
+  background-color: #fff;
 }
 
 .booking__checkbox-karaoke:checked::before {
@@ -461,8 +459,8 @@ input[type="number"]:focus {
   padding: 0 15px;
 }
 
-.group-input:focus {
-  border: 2px solid #cd06ff;
+.group-input:focus-visible {
+  outline: 2px solid #cd06ff;
 }
 
 .reserve-block-item--third {
@@ -678,9 +676,9 @@ input[type="number"]:focus {
     left: 75%;
   }
 
-.booking__field-reserve {
-  justify-content: space-between;
-}
+  .booking__field-reserve {
+    justify-content: space-between;
+  }
 
   .reserve-block {
     flex-wrap: wrap;
@@ -872,7 +870,7 @@ input[type="number"]:focus {
     margin-bottom: 25px;
   }
 
-  
+
 
   .reserve-block {
     flex-wrap: wrap;
